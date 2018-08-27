@@ -6,7 +6,7 @@ describe 'song creation' do
 
       artist = Artist.create(name: 'Johnny Cash')
 
-      visit "/artists/#{artist.id}/songs/new"
+      visit new_artist_song_path(artist)
       song_title = 'Boy Named Sue'
       fill_in :song_title, with: song_title
       fill_in :song_length, with: 200
