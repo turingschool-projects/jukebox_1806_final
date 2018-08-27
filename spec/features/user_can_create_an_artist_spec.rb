@@ -5,12 +5,12 @@ describe 'As a user' do
     it 'should see a form for new artist' do
       artist_name = "Outkast"
 
-      visit '/artists/new'
+      visit new_artist_path
 
       fill_in "artist[name]", with: artist_name
       click_on "Create Artist"
 
-      expect(current_path).to eq('/artists')
+      expect(current_path).to eq(artists_path)
       expect(page).to have_content(artist_name)
     end
   end

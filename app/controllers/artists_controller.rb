@@ -7,7 +7,7 @@ class ArtistsController < ApplicationController
   def create
     artist = Artist.new(artist_params)
     if artist.save
-      redirect_to "/artists"
+      redirect_to artists_path
     else
       render :new
     end
