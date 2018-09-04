@@ -13,5 +13,12 @@ describe 'As a user' do
       expect(current_path).to eq(artists_path)
       expect(page).to have_content(artist_name)
     end
+    it 'blocks saving an artist if data is missing' do
+      visit new_artist_path
+      click_on "Create Artist"
+
+      expect(current_path).to eq(artists_path)
+      expect(page).to have_field(:artist_name)
+    end
   end
 end
