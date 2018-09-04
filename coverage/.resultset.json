@@ -1,0 +1,113 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/id/src/turing/mod2/jukebox_1806/app/models/user.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        null
+      ],
+      "/Users/id/src/turing/mod2/jukebox_1806/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/id/src/turing/mod2/jukebox_1806/app/controllers/sessions_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/id/src/turing/mod2/jukebox_1806/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        4,
+        null,
+        null
+      ],
+      "/Users/id/src/turing/mod2/jukebox_1806/app/controllers/users_controller.rb": [
+        1,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/id/src/turing/mod2/jukebox_1806/app/controllers/songs_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/id/src/turing/mod2/jukebox_1806/app/models/song.rb": [
+        1,
+        1,
+        1,
+        1,
+        null
+      ]
+    },
+    "timestamp": 1536084156
+  }
+}
