@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :songs, only: [:index]
 
   resources :artists, only: [:new, :create, :index], shallow: true do
-    resources :songs, only: [:show, :new, :create]
+    resources :songs, only: [:show, :new, :create], param: :slug
   end
 
   resources :playlists, only: [:new, :create, :show]
