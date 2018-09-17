@@ -13,7 +13,7 @@ describe 'song creation' do
 
       click_on 'Create Song'
 
-      expect(current_path).to eq(song_path(Song.last))
+      expect(current_path).to eq(song_path(Song.last.slug))
       expect(page).to have_content(song_title)
       expect(page).to have_content(artist.name)
     end
