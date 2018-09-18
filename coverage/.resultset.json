@@ -1,15 +1,25 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/mikemckee/turing/2module/final_assessment/jukebox_1806_final/app/models/artist.rb": [
+      "/Users/mikemckee/turing/2module/final_assessment/jukebox_1806_final/app/models/genre.rb": [
+        1,
         1,
         1,
         null,
         1,
+        3,
+        null,
         null
       ],
       "/Users/mikemckee/turing/2module/final_assessment/jukebox_1806_final/app/models/application_record.rb": [
         1,
+        1,
+        null
+      ],
+      "/Users/mikemckee/turing/2module/final_assessment/jukebox_1806_final/app/models/artist.rb": [
+        1,
+        1,
+        null,
         1,
         null
       ],
@@ -30,7 +40,7 @@
         null,
         1,
         1,
-        2,
+        6,
         null,
         null
       ],
@@ -40,18 +50,8 @@
         1,
         null
       ],
-      "/Users/mikemckee/turing/2module/final_assessment/jukebox_1806_final/app/models/genre.rb": [
+      "/Users/mikemckee/turing/2module/final_assessment/jukebox_1806_final/app/controllers/genres_controller.rb": [
         1,
-        1,
-        1,
-        null
-      ],
-      "/Users/mikemckee/turing/2module/final_assessment/jukebox_1806_final/app/controllers/songs_controller.rb": [
-        1,
-        1,
-        0,
-        null,
-        null,
         1,
         0,
         0,
@@ -60,6 +60,7 @@
         1,
         0,
         0,
+        null,
         0,
         null,
         null,
@@ -116,6 +117,6 @@
         null
       ]
     },
-    "timestamp": 1537287352
+    "timestamp": 1537287935
   }
 }
