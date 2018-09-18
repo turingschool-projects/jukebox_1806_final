@@ -1,3 +1,10 @@
 <h1> <%= @song.title %> </h1>
 <p>by <%= @song.artist.name %> </p>
 <p>Rating: <%= @song.rating %></p>
+
+<h2>Genres for this Song:</h2>
+<ul>
+  <% @genres.each do |genre| %>
+    <li><%= link_to genre.name, genre_path(genre) %></li>
+  <% end %>
+</ul>
