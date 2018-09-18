@@ -17,8 +17,8 @@ describe 'as a visitor' do
 
       visit genres_path
 
-      expect(page).to have_content(song.genres.first)
-      expect(page).to have_content(song_2.genres.first)
+      expect(page).to have_content(song.genres.first.name)
+      expect(page).to have_content(song_2.genres.first.name)
 
     end
   end
