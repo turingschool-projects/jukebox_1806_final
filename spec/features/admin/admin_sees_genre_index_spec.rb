@@ -13,11 +13,10 @@ describe 'admin visits a genre index page' do
     expect(page).to have_content(genre_2.name)
 
     new_genre = 'Trip Hop'
-    fill_in :genre_name, with: new_genre
+    fill_in 'genre[name]', with: new_genre
 
     click_button 'Create Genre'
 
-    expect(page).to have_content(new_genre.name)
-
+    expect(page).to have_content(new_genre)
   end
 end
