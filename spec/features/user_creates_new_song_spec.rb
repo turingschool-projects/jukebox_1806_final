@@ -10,6 +10,8 @@ describe 'song creation' do
       song_title = 'Boy Named Sue'
       fill_in :song_title, with: song_title
       fill_in :song_length, with: 200
+      fill_in :song_play_count, with: 12
+      fill_in :song_rating, with: 3
 
       click_on 'Create Song'
 

@@ -17,9 +17,13 @@ Rails.application.routes.draw do
 
   resources :carts, only: [:create]
 
+  resources :genres, only: [:index, :create, :show]
+
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   get '/logout', to: 'sessions#destroy'
   delete '/logout', to: 'sessions#destroy'
+
+  get 'admin/genres', to: 'genres#index'
 
 end
