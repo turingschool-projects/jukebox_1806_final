@@ -20,22 +20,12 @@ describe "User visits genres index" do
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(admin)
 
       visit genres_path
-      expect(page).to have_content("Genres")
-      expect(page).to have_content(song.genres.first.name)
-      expect(page).to have_content(song_2.genres.first.name)
-      expect(page).to have_css(".new_genre")
-    end
-  end
 
-  context "as a default user" do
-    it "does not allow default user to see new genre form" do
-      user = User.create(username: "Dione", password: "test123")
+      fill_in :genre_name, with: "New Genre"
+      click_on "Create Genre"
 
-      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
-
-      visit admin_categories_path
-
-      expect(page).to_not have_css(".new_genre")
+      expect(current_path).to eq(genres_path)
+      expect(page).to have_content("New Genre")
     end
   end
 end
