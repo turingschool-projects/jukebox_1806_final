@@ -16,6 +16,15 @@ describe 'as an Admin' do
       expect(current_path).to eq(genres_path)
       expect(page).to have_content(Genre.last.name)
     end
+    
+    it 'user cant create new genre' do
+      user = User.create(username: "admin", password: "12345")
+      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
+
+      visit genres_path
+
+      expect(page).to_not have_content('Create Genre')
+    end
 
     it 'admin redirected to genre index page after creating new genre' do
       admin = User.create(username: "admin", password: "12345", role: 1)
