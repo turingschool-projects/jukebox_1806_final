@@ -31,16 +31,13 @@ describe 'As a visitor' do
 
 			expect(page).to have_content("Average Song Rating: #{@genre1.avg_rating}")
 		end
+		it 'displays name and rating of song with highest rating' do
+			visit genre_path(@genre1)
+
+			within("#highest-rated-song") do
+				expect(page).to have_content(@song2.title)
+				expect(page).to have_content("Rating: #{@song2.rating}")
+			end
+		end
 	end
 end
-
-# User Story 8:
-
-# As a Visitor,
-#   When I visit a genre show page,
-#     I see the average rating for all songs in this genre
-
-# Testing requirements:
-# - I should add at least 2 songs for this genre
-# - Also include 1 or more songs NOT associated with this genre to ensure these
-#   other songs are not included in the average rating
