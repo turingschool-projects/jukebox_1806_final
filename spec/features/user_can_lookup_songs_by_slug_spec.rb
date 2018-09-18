@@ -12,6 +12,7 @@ describe 'song slugs' do
 
       expect(page).to have_content(song_1.title)
       expect(page).to have_content(song_1.artist.name)
+      expect(page).to have_content(song_1.rating)
     end
   end
 end
