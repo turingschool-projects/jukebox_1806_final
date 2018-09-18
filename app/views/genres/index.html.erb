@@ -5,3 +5,7 @@
     <li><%= genre.name %></li>
   </ul>
 <% end %>
+
+<% if current_admin? %>
+  <%= link_to "Add New Genre", new_admin_genre_path, class: 'btn' %>
+<% end %>
