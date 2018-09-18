@@ -13,8 +13,10 @@ Rails.application.routes.draw do
 
   namespace :admin do
     resources :categories, only: :index
+    resources :genres, only: [:new, :create]
   end
 
+  resources :genres, only: [:index]
   resources :carts, only: [:create]
 
   get '/login', to: 'sessions#new'

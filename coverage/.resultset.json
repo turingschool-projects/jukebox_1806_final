@@ -1,6 +1,36 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/danielmulitauopele/Turing/2module/final/jukebox_1806_final/spec/features/admin_sees_categories_index_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
       "/Users/danielmulitauopele/Turing/2module/final/jukebox_1806_final/spec/features/user_can_add_songs_to_a_cart_spec.rb": [
         1,
         null,
@@ -242,6 +272,25 @@
         null,
         null
       ],
+      "/Users/danielmulitauopele/Turing/2module/final/jukebox_1806_final/spec/features/visitor_can_see_genre_index_page_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
       "/Users/danielmulitauopele/Turing/2module/final/jukebox_1806_final/spec/features/visitor_can_see_song_show_page_spec.rb": [
         1,
         null,
@@ -254,7 +303,24 @@
         1,
         1,
         null,
-        0,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/danielmulitauopele/Turing/2module/final/jukebox_1806_final/spec/features/visitor_cannot_see_new_genre_form_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
         null,
         null,
         null
@@ -314,17 +380,49 @@
         1,
         null,
         1,
-        48,
+        54,
         null,
         null,
         1,
-        35,
+        41,
         null,
         null,
         1,
         6,
         null,
         null,
+        null
+      ],
+      "/Users/danielmulitauopele/Turing/2module/final/jukebox_1806_final/spec/models/genre_song_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        2,
+        null,
+        null
+      ],
+      "/Users/danielmulitauopele/Turing/2module/final/jukebox_1806_final/app/models/genre_song.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/danielmulitauopele/Turing/2module/final/jukebox_1806_final/spec/models/genre_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        2,
+        null,
+        null
+      ],
+      "/Users/danielmulitauopele/Turing/2module/final/jukebox_1806_final/app/models/genre.rb": [
+        1,
+        1,
+        1,
         null
       ],
       "/Users/danielmulitauopele/Turing/2module/final/jukebox_1806_final/spec/models/playlist_spec.rb": [
@@ -351,10 +449,14 @@
         2,
         2,
         2,
+        2,
+        2,
         null,
         null
       ],
       "/Users/danielmulitauopele/Turing/2module/final/jukebox_1806_final/app/models/song.rb": [
+        1,
+        1,
         1,
         1,
         1,
@@ -406,6 +508,7 @@
       ],
       "/Users/danielmulitauopele/Turing/2module/final/jukebox_1806_final/app/controllers/songs_controller.rb": [
         1,
+        null,
         1,
         13,
         null,
@@ -437,19 +540,24 @@
         1,
         null,
         1,
-        null,
         1,
         null,
         1,
-        35,
+        null,
+        1,
+        40,
         null,
         null,
         1,
-        2,
+        8,
         null,
         null,
         1,
-        46,
+        0,
+        null,
+        null,
+        1,
+        52,
         null,
         null
       ],
@@ -466,28 +574,6 @@
         4,
         4,
         null,
-        null,
-        null
-      ],
-      "/Users/danielmulitauopele/Turing/2module/final/jukebox_1806_final/app/controllers/playlists_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        null,
-        1,
-        1,
         null,
         null
       ],
@@ -517,10 +603,22 @@
         null,
         null
       ],
-      "/Users/danielmulitauopele/Turing/2module/final/jukebox_1806_final/app/models/playlist_song.rb": [
+      "/Users/danielmulitauopele/Turing/2module/final/jukebox_1806_final/app/controllers/admin/categories_controller.rb": [
         1,
         1,
+        null,
+        null,
+        null
+      ],
+      "/Users/danielmulitauopele/Turing/2module/final/jukebox_1806_final/app/controllers/admin/base_controller.rb": [
         1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        4,
+        null,
         null
       ],
       "/Users/danielmulitauopele/Turing/2module/final/jukebox_1806_final/app/controllers/sessions_controller.rb": [
@@ -570,25 +668,60 @@
         null,
         null
       ],
-      "/Users/danielmulitauopele/Turing/2module/final/jukebox_1806_final/app/controllers/admin/categories_controller.rb": [
+      "/Users/danielmulitauopele/Turing/2module/final/jukebox_1806_final/app/controllers/genres_controller.rb": [
         1,
         1,
-        null,
+        4,
         null,
         null
       ],
-      "/Users/danielmulitauopele/Turing/2module/final/jukebox_1806_final/app/controllers/admin/base_controller.rb": [
+      "/Users/danielmulitauopele/Turing/2module/final/jukebox_1806_final/app/models/playlist_song.rb": [
         1,
         1,
+        1,
+        null
+      ],
+      "/Users/danielmulitauopele/Turing/2module/final/jukebox_1806_final/app/controllers/playlists_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
         null,
         1,
         null,
         1,
-        2,
+        1,
+        null,
+        null
+      ],
+      "/Users/danielmulitauopele/Turing/2module/final/jukebox_1806_final/app/controllers/admin/genres_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
         null,
         null
       ]
     },
-    "timestamp": 1537283819
+    "timestamp": 1537286960
   }
 }
