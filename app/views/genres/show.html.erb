@@ -5,9 +5,11 @@
   <ul>
     <% @songs.each do |song| %>
     <li>Title: <%= song.title %></li>
-    <li>Length: <%= song.length %></li><br>
-    <li>Play Count: <%= song.play_count %></li><br>
+    <li>Length: <%= song.length %></li>
+    <li>Play Count: <%= song.play_count %></li>
     <li>Rating: <%= song.rating %></li><br>
     <% end %>
   </ul>
 </div>
+
+<h2>Average Song Rating: <%= @avg_rating %></h2>

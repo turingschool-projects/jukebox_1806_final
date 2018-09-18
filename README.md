@@ -103,6 +103,8 @@ Testing requirements:
 - I should add at least 2 songs for this genre
 - Also include 1 or more songs NOT associated with this genre to ensure these
   other songs are not included in the average rating
+
+----------------
 Extensions
 
 If you have finished ALL previous stories fully but your assessment time is not yet over, please continue on these extra stories; there are no extra points for completing these, it's to avoid disruption in the classroom while others are still working. Please try to minimize other noise.
