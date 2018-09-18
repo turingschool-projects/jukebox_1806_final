@@ -6,4 +6,9 @@ describe Song, type: :model do
     it {should have_many(:playlist_songs)}
     it {should have_many(:playlists).through(:playlist_songs)}
   end
+  
+  describe 'Relationships' do 
+    it { should have_many :song_genres}
+    it { should have_many :genres}
+  end
 end

@@ -1,0 +1,5 @@
+<p> Songs for Genre <%= @genre.name %></p>
+
+<% @genre.songs.each do |song| %>
+  <%= song.title %>
+<% end %>
