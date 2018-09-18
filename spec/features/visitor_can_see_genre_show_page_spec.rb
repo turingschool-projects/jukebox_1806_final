@@ -21,5 +21,10 @@ describe 'as a visitor' do
       expect(page).to have_content(@song_3.title)
       expect(page).to_not have_content(@song_4.title)
     end
+    it "should list the average rating for songs in this genre" do
+      visit genre_path(@genre_1)
+
+      expect(page).to have_content("Average Rating for this Genre: 3.33 Stars")
+    end
   end
 end

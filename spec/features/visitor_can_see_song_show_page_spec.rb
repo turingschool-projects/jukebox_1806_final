@@ -19,7 +19,6 @@ describe 'as a visitor' do
     it "should display genres for that particular song" do
       visit song_path(@song_1.slug)
 
-      save_and_open_page
       expect(page).to have_content(@song_1.title)
       expect(page).to have_content("Genres for This Song")
       expect(page).to have_content(@genre_1.name)
