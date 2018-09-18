@@ -484,6 +484,22 @@
         1,
         null
       ],
+      "/Users/miriambensalah/turing/2module/jukebox_1806_final/spec/models/song_genre_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        2,
+        null,
+        null
+      ],
+      "/Users/miriambensalah/turing/2module/jukebox_1806_final/app/models/song_genre.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
       "/Users/miriambensalah/turing/2module/jukebox_1806_final/spec/models/song_spec.rb": [
         1,
         null,
@@ -603,36 +619,50 @@
         null,
         null
       ],
-      "/Users/miriambensalah/turing/2module/jukebox_1806_final/app/models/song_genre.rb": [
+      "/Users/miriambensalah/turing/2module/jukebox_1806_final/app/controllers/users_controller.rb": [
         1,
         1,
+        2,
+        null,
+        null,
         1,
+        2,
+        2,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        3,
+        null,
+        null,
+        1,
+        1,
+        2,
+        null,
         null
       ],
-      "/Users/miriambensalah/turing/2module/jukebox_1806_final/app/controllers/genres_controller.rb": [
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        5,
-        5,
-        null,
-        null,
+      "/Users/miriambensalah/turing/2module/jukebox_1806_final/app/controllers/sessions_controller.rb": [
         1,
         1,
         null,
         null,
         1,
+        3,
+        3,
         2,
         2,
         null,
-        null,
         1,
         null,
+        null,
+        null,
         1,
-        2,
+        1,
+        1,
         null,
         null
       ],
@@ -662,6 +692,46 @@
         null,
         null
       ],
+      "/Users/miriambensalah/turing/2module/jukebox_1806_final/app/models/playlist_song.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/miriambensalah/turing/2module/jukebox_1806_final/app/controllers/admin/categories_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/miriambensalah/turing/2module/jukebox_1806_final/app/controllers/admin/base_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        2,
+        null,
+        null
+      ],
+      "/Users/miriambensalah/turing/2module/jukebox_1806_final/app/controllers/carts_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        4,
+        4,
+        4,
+        4,
+        null,
+        4,
+        4,
+        null,
+        null,
+        null
+      ],
       "/Users/miriambensalah/turing/2module/jukebox_1806_final/app/controllers/playlists_controller.rb": [
         1,
         1,
@@ -684,94 +754,34 @@
         null,
         null
       ],
-      "/Users/miriambensalah/turing/2module/jukebox_1806_final/app/controllers/carts_controller.rb": [
-        1,
-        1,
-        null,
-        1,
-        4,
-        4,
-        4,
-        4,
-        null,
-        4,
-        4,
-        null,
-        null,
-        null
-      ],
-      "/Users/miriambensalah/turing/2module/jukebox_1806_final/app/controllers/admin/categories_controller.rb": [
-        1,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/Users/miriambensalah/turing/2module/jukebox_1806_final/app/controllers/admin/base_controller.rb": [
+      "/Users/miriambensalah/turing/2module/jukebox_1806_final/app/controllers/genres_controller.rb": [
         1,
         1,
         null,
         1,
         null,
         1,
-        2,
-        null,
-        null
-      ],
-      "/Users/miriambensalah/turing/2module/jukebox_1806_final/app/models/playlist_song.rb": [
-        1,
-        1,
-        1,
-        null
-      ],
-      "/Users/miriambensalah/turing/2module/jukebox_1806_final/app/controllers/sessions_controller.rb": [
-        1,
-        1,
-        null,
-        null,
-        1,
-        3,
-        3,
-        2,
-        2,
-        null,
-        1,
-        null,
+        5,
+        5,
         null,
         null,
         1,
         1,
-        1,
-        null,
-        null
-      ],
-      "/Users/miriambensalah/turing/2module/jukebox_1806_final/app/controllers/users_controller.rb": [
-        1,
-        1,
-        2,
         null,
         null,
         1,
         2,
         2,
-        1,
-        1,
-        null,
-        1,
-        null,
         null,
         null,
         1,
-        3,
         null,
-        null,
-        1,
         1,
         2,
         null,
         null
       ]
     },
-    "timestamp": 1537308980
+    "timestamp": 1537309078
   }
 }
