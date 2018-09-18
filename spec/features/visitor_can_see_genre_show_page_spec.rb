@@ -14,7 +14,7 @@ describe 'as a visitor' do
     end
     it "should list all songs with that genre" do
       visit genre_path(@genre_1)
-
+    
       expect(page).to have_content("Rock Songs")
       expect(page).to have_content(@song_1.title)
       expect(page).to have_content(@song_2.title)
