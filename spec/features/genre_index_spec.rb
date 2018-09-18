@@ -53,6 +53,8 @@ describe 'Visit genre index' do
       click_on 'Submit'
 
       expect(page).to have_content('Potato')
+      expect(page).to have_content(genre_1.name)
+      expect(page).to have_content(genre_2.name)
 
     end
   end
