@@ -1,0 +1,8 @@
+Genre: <%= @genre.name %>
+
+Songs: <% @genre.songs.each do |song| %>
+<%= song.title %>
+<%= song.rating %>
+<% end %>
+
+Avg Song Rating: <%= @genre.average_song_rating %>

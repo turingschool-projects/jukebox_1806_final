@@ -10,8 +10,8 @@ describe 'as an Admin' do
 
       name = 'Classical'
 
-      fill_in :name, with: name
-      click_on('Submit')
+      fill_in :genre_name, with: name
+      click_on('Create Genre')
 
       expect(current_path).to eq(genres_path)
       expect(page).to have_content(Genre.last.name)
@@ -28,8 +28,8 @@ describe 'as an Admin' do
 
       name = 'Classical'
 
-      fill_in :name, with: name
-      click_on('Submit')
+      fill_in :genre_name, with: name
+      click_on('Create Genre')
 
       expect(current_path).to eq(genres_path)
       expect(page).to have_content(Genre.last.name)

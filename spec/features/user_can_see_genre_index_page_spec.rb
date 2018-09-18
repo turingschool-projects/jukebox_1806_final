@@ -11,6 +11,8 @@ describe 'genre index' do
     expect(page).to have_content(genre_1.name)
     expect(page).to have_content(genre_2.name)
     expect(page).to have_content(genre_3.name)
-  
+    expect(page).to have_link(genre_1.name)
+    expect(page).to have_link(genre_2.name)
+    expect(page).to have_link(genre_3.name)
   end
 end

@@ -2,3 +2,7 @@
 <p>by <%= @song.artist.name %> </p>
 Play Count: <%= @song.play_count %>
 Rating: <%= @song.rating %>
+
+Genres for this song: <% @song.genres.each do |genre| %>
+<%= genre.name %>
+<% end %>

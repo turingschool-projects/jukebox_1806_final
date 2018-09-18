@@ -5,10 +5,11 @@ class GenresController < ApplicationController
 
   def index
     @genres = Genre.all
+    @genre = Genre.new
   end
 
-  def new
-    @genre = Genre.new
+  def show
+    @genre = Genre.find(params[:id])
   end
 
   def create
