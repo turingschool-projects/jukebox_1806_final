@@ -16,6 +16,9 @@ describe 'genre index' do
       expect(page).to have_content(genre_2.name)
     end
     scenario 'admin can also see a form to create a new genre' do
+      # admin = User.create!(name: "Dr.Who", email: "thedoctor@tardis.com", password: "blue", password_confirmation: "blue", role: 1)
+      # allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(admin)
+
 
       visit genres_path
 

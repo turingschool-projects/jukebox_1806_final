@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-09-18T10:14:05-06:00">2018-09-18T10:14:05-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-09-18T10:22:44-06:00">2018-09-18T10:22:44-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">98.08%</span></span>
+    (<span class="covered_percent"><span class="green">98.63%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.68
+         1.69
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>36</b> files in total.
-    <b>364</b> relevant lines. 
-    <span class="green"><b>357</b> lines covered</span> and
-    <span class="red"><b>7</b> lines missed </span>
+    <b>365</b> relevant lines. 
+    <span class="green"><b>360</b> lines covered</span> and
+    <span class="red"><b>5</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -103,11 +103,11 @@
       <tr>
         <td class="strong"><a href="#5d0133bcc943dda188a26ade093f57bf76daccb2" class="src_link" title="app/controllers/genres_controller.rb">app/controllers/genres_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>5</td>
-        <td>3</td>
-        <td>3</td>
+        <td>6</td>
+        <td>4</td>
+        <td>4</td>
         <td>0</td>
-        <td>1.7</td>
+        <td>2.0</td>
       </tr>
       
       <tr>
@@ -242,12 +242,12 @@
       
       <tr>
         <td class="strong"><a href="#cb9445900df43cb0b39bc16cd4ff14e238c45510" class="src_link" title="spec/features/admin_views_genre_index_page_spec.rb">spec/features/admin_views_genre_index_page_spec.rb</a></td>
-        <td class="yellow strong">85.71 %</td>
-        <td>27</td>
+        <td class="green strong">100.0 %</td>
+        <td>30</td>
         <td>14</td>
-        <td>12</td>
-        <td>2</td>
-        <td>0.9</td>
+        <td>14</td>
+        <td>0</td>
+        <td>1.0</td>
       </tr>
       
       <tr>
@@ -952,8 +952,8 @@
     <h3>app/controllers/genres_controller.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>3</b> relevant lines. 
-      <span class="green"><b>3</b> lines covered</span> and
+      <b>4</b> relevant lines. 
+      <span class="green"><b>4</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -979,13 +979,19 @@
           <code class="ruby">    @genres = Genre.all</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
+        <li class="covered" data-hits="3" data-linenumber="4">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    @genre = Genre.new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="never" data-hits="" data-linenumber="6">
           
           
           <code class="ruby">end</code>
@@ -2176,11 +2182,11 @@
         <div class="source_table" id="cb9445900df43cb0b39bc16cd4ff14e238c45510">
   <div class="header">
     <h3>spec/features/admin_views_genre_index_page_spec.rb</h3>
-    <h4><span class="yellow">85.71 %</span> covered</h4>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
       <b>14</b> relevant lines. 
-      <span class="green"><b>12</b> lines covered</span> and
-      <span class="red"><b>2</b> lines missed.</span>
+      <span class="green"><b>14</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -2298,13 +2304,13 @@
         <li class="never" data-hits="" data-linenumber="19">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">      # admin = User.create!(name: &quot;Dr.Who&quot;, email: &quot;thedoctor@tardis.com&quot;, password: &quot;blue&quot;, password_confirmation: &quot;blue&quot;, role: 1)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="20">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="20">
           
-          <code class="ruby">      visit genres_path</code>
+          
+          <code class="ruby">      # allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(admin)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="21">
@@ -2313,37 +2319,55 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="22">
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="23">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      visit genres_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="25">
           <span class="hits">1</span>
           
           <code class="ruby">      expect(page).to have_content(&quot;Create new genre:&quot;)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="23">
-          
+        <li class="covered" data-hits="1" data-linenumber="26">
+          <span class="hits">1</span>
           
           <code class="ruby">      expect(page).to have_content(&quot;Name:&quot;)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="24">
-          
+        <li class="covered" data-hits="1" data-linenumber="27">
+          <span class="hits">1</span>
           
           <code class="ruby">      expect(page).to have_button(&quot;Create Genre&quot;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="25">
+        <li class="never" data-hits="" data-linenumber="28">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="26">
+        <li class="never" data-hits="" data-linenumber="29">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="27">
+        <li class="never" data-hits="" data-linenumber="30">
           
           
           <code class="ruby">end</code>
