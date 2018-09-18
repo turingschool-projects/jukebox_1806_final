@@ -6,4 +6,7 @@ describe Song, type: :model do
     it {should have_many(:playlist_songs)}
     it {should have_many(:playlists).through(:playlist_songs)}
   end
+  describe "validations" do
+    it {should validate_presence_of(:rating)}
+  end
 end
