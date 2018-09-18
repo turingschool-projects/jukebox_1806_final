@@ -1,0 +1,11 @@
+<% @genres.each do |genre| %>
+<%= genre.name %>
+<% end %>
+
+<% if current_admin? %>
+  <%= form_for [:admin, @genre] do |f| %>
+      <%= f.label :name %>
+      <%= f.date_field :name %>
+      <%= f.submit %>
+    <% end %>
+<% end %>
