@@ -22,4 +22,6 @@ Rails.application.routes.draw do
   get '/logout', to: 'sessions#destroy'
   delete '/logout', to: 'sessions#destroy'
 
+  resources :genres, only: [:index]
+
 end
