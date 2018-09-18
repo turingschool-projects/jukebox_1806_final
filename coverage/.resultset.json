@@ -258,9 +258,9 @@
         null,
         null,
         1,
-        0,
+        1,
         null,
-        0,
+        1,
         null,
         0,
         0,
@@ -357,6 +357,19 @@
         null,
         null
       ],
+      "/Users/dylanmeskis/turing/2module/final/jukebox_1806_final/spec/models/genre_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        null
+      ],
+      "/Users/dylanmeskis/turing/2module/final/jukebox_1806_final/app/models/genre.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
       "/Users/dylanmeskis/turing/2module/final/jukebox_1806_final/spec/models/playlist_spec.rb": [
         1,
         null,
@@ -385,6 +398,7 @@
         null
       ],
       "/Users/dylanmeskis/turing/2module/final/jukebox_1806_final/app/models/song.rb": [
+        1,
         1,
         1,
         1,
@@ -431,12 +445,6 @@
         null,
         1,
         null,
-        1,
-        null
-      ],
-      "/Users/dylanmeskis/turing/2module/final/jukebox_1806_final/app/models/playlist_song.rb": [
-        1,
-        1,
         1,
         null
       ],
@@ -510,24 +518,6 @@
         null,
         null,
         1,
-        1,
-        2,
-        null,
-        null
-      ],
-      "/Users/dylanmeskis/turing/2module/final/jukebox_1806_final/app/controllers/admin/categories_controller.rb": [
-        1,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/Users/dylanmeskis/turing/2module/final/jukebox_1806_final/app/controllers/admin/base_controller.rb": [
-        1,
-        1,
-        null,
-        1,
-        null,
         1,
         2,
         null,
@@ -617,8 +607,32 @@
         2,
         null,
         null
+      ],
+      "/Users/dylanmeskis/turing/2module/final/jukebox_1806_final/app/controllers/admin/categories_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/dylanmeskis/turing/2module/final/jukebox_1806_final/app/controllers/admin/base_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        2,
+        null,
+        null
+      ],
+      "/Users/dylanmeskis/turing/2module/final/jukebox_1806_final/app/models/playlist_song.rb": [
+        1,
+        1,
+        1,
+        null
       ]
     },
-    "timestamp": 1537283919
+    "timestamp": 1537284133
   }
 }
