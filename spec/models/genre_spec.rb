@@ -6,6 +6,7 @@ describe Genre, type: :model do
   end
   describe 'relationships' do
     it {should have_many(:songs).through(:song_genres)}
+    it {should have_many(:song_genres)}
   end
   describe 'methods' do
     it '#average_song_rating' do
