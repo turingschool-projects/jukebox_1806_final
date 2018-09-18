@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe "As an admin" do
-  context "they visit /admin/genres" do
+  context "they visit /genres" do
     it 'displays a form to create a new genre' do
 
       admin = User.create(username: "Ian", password: "test123", role: 1)
@@ -13,7 +13,7 @@ describe "As an admin" do
       genre_3 = Genre.create!(name: "Country")
       genre_4 = Genre.create!(name: "Rock")
 
-      visit admin_genres_path
+      visit genres_path
 
       expect(page).to have_content("Create New Genre")
     end
@@ -28,7 +28,7 @@ describe "As an admin" do
       genre_3 = Genre.create!(name: "Country")
       genre_4 = Genre.create!(name: "Rock")
 
-      visit admin_genres_path
+      visit genres_path
 
       fill_in :genre_name, with: "Heavy Metal"
       click_on "Create"

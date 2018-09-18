@@ -8,9 +8,9 @@
 
 <% if current_admin? %>
   <h4>Create New Genre</h4>
-  <%= form_for @genre do |f| %>
+  <%= form_for [:admin, @genre] do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
   <%= f.submit %>
-<% end %>
+  <% end %>
 <% end %>
