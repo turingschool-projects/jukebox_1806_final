@@ -31,10 +31,10 @@ describe "as an admin" do
       click_on "Create Genre"
 
       expect(current_path).to eq(genres_path)
-      expect(page).to have_content(genre1.name)
-      expect(page).to have_content(genre2.name)
-      expect(page).to have_content(genre3.name)
-      expect(page).to have_content("Techno")
+      expect(page).to have_link(genre1.name)
+      expect(page).to have_link(genre2.name)
+      expect(page).to have_link(genre3.name)
+      expect(page).to have_link("Techno")
     end
   end
 end
