@@ -13,7 +13,7 @@ describe 'genre show' do
       visit genres_path
 
       click_on "Black Metal"
-save_and_open_page
+
       expect(current_path).to eq(genre_path(genre_1))
       expect(page).to have_content(genre_1.name)
       expect(page).to_not have_content(genre_2.name)
