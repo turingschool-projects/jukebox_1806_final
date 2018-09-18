@@ -298,8 +298,8 @@
         null,
         1,
         null,
-        1,
-        1,
+        0,
+        0,
         null,
         null
       ],
@@ -362,7 +362,7 @@
         null,
         null,
         1,
-        38,
+        36,
         null,
         null,
         1,
@@ -466,6 +466,65 @@
         1,
         null
       ],
+      "/Users/nicklindy/turing/2module/final/jukebox_1806_final/app/models/playlist_song.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/nicklindy/turing/2module/final/jukebox_1806_final/app/models/song_genre.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/nicklindy/turing/2module/final/jukebox_1806_final/app/controllers/artists_controller.rb": [
+        1,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        2,
+        2,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        2,
+        null,
+        null
+      ],
+      "/Users/nicklindy/turing/2module/final/jukebox_1806_final/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        36,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        48,
+        null,
+        null
+      ],
       "/Users/nicklindy/turing/2module/final/jukebox_1806_final/app/controllers/songs_controller.rb": [
         1,
         1,
@@ -494,42 +553,6 @@
         null,
         null
       ],
-      "/Users/nicklindy/turing/2module/final/jukebox_1806_final/app/controllers/application_controller.rb": [
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
-        1,
-        38,
-        null,
-        null,
-        1,
-        2,
-        null,
-        null,
-        1,
-        48,
-        null,
-        null
-      ],
-      "/Users/nicklindy/turing/2module/final/jukebox_1806_final/app/models/song_genre.rb": [
-        1,
-        1,
-        1,
-        null
-      ],
-      "/Users/nicklindy/turing/2module/final/jukebox_1806_final/app/controllers/genres_controller.rb": [
-        1,
-        null,
-        1,
-        2,
-        null,
-        null,
-        null
-      ],
       "/Users/nicklindy/turing/2module/final/jukebox_1806_final/app/controllers/carts_controller.rb": [
         1,
         1,
@@ -542,6 +565,17 @@
         null,
         4,
         4,
+        null,
+        null,
+        null
+      ],
+      "/Users/nicklindy/turing/2module/final/jukebox_1806_final/app/controllers/genres_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        2,
+        2,
         null,
         null,
         null
@@ -593,50 +627,6 @@
         null,
         null
       ],
-      "/Users/nicklindy/turing/2module/final/jukebox_1806_final/app/controllers/admin/categories_controller.rb": [
-        1,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/Users/nicklindy/turing/2module/final/jukebox_1806_final/app/controllers/admin/base_controller.rb": [
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        2,
-        null,
-        null
-      ],
-      "/Users/nicklindy/turing/2module/final/jukebox_1806_final/app/controllers/artists_controller.rb": [
-        1,
-        null,
-        1,
-        2,
-        null,
-        null,
-        1,
-        2,
-        2,
-        1,
-        null,
-        1,
-        null,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        2,
-        null,
-        null
-      ],
       "/Users/nicklindy/turing/2module/final/jukebox_1806_final/app/controllers/playlists_controller.rb": [
         1,
         1,
@@ -659,13 +649,25 @@
         null,
         null
       ],
-      "/Users/nicklindy/turing/2module/final/jukebox_1806_final/app/models/playlist_song.rb": [
+      "/Users/nicklindy/turing/2module/final/jukebox_1806_final/app/controllers/admin/categories_controller.rb": [
         1,
         1,
+        null,
+        null,
+        null
+      ],
+      "/Users/nicklindy/turing/2module/final/jukebox_1806_final/app/controllers/admin/base_controller.rb": [
         1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        2,
+        null,
         null
       ]
     },
-    "timestamp": 1537285225
+    "timestamp": 1537286579
   }
 }
