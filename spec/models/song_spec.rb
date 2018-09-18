@@ -6,4 +6,12 @@ describe Song, type: :model do
     it {should have_many(:playlist_songs)}
     it {should have_many(:playlists).through(:playlist_songs)}
   end
+  describe 'validations' do
+  	it do
+  		should validate_numericality_of(:rating).
+  			only_integer.
+  			is_less_than_or_equal_to(5).
+  			is_greater_than_or_equal_to(0)
+  	end
+  end
 end
