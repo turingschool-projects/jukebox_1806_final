@@ -13,7 +13,6 @@ describe 'visitor visits song show page' do
 
 
     visit song_path(song1.slug)
-    save_and_open_page
     expect(page).to have_content(genre1.name)
     expect(page).to have_content(genre2.name)
     expect(page).to_not have_content(genre3.name)
