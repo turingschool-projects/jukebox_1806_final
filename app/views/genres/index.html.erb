@@ -1,0 +1,14 @@
+<h1>All Genres</h1>
+<div>
+  <% @genres.each do |genre| %>
+  <section id="genre-<%= genre.id %>"> 
+    <ul>
+      <li>Name: <%= link_to genre.name, genre_path(genre) %> </li>
+    </ul>
+   <% end %>
+  </section>
+</div>
+
+<% if current_admin? %>
+  <%= render partial: 'form' %>
+<% end %>
