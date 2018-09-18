@@ -261,8 +261,8 @@
         null,
         1,
         null,
-        0,
-        0,
+        1,
+        1,
         null,
         null
       ],
@@ -345,7 +345,7 @@
         null,
         null,
         1,
-        35,
+        36,
         null,
         null,
         1,
@@ -472,6 +472,49 @@
         1,
         null
       ],
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/app/controllers/playlists_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        36,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        47,
+        null,
+        null
+      ],
       "/Users/autumnmartin/turing/2module/jukebox_1806_final/app/controllers/songs_controller.rb": [
         1,
         1,
@@ -501,80 +544,10 @@
         null,
         null
       ],
-      "/Users/autumnmartin/turing/2module/jukebox_1806_final/app/controllers/application_controller.rb": [
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
-        1,
-        35,
-        null,
-        null,
-        1,
-        2,
-        null,
-        null,
-        1,
-        47,
-        null,
-        null
-      ],
-      "/Users/autumnmartin/turing/2module/jukebox_1806_final/app/controllers/carts_controller.rb": [
-        1,
-        1,
-        null,
-        1,
-        4,
-        4,
-        4,
-        4,
-        null,
-        4,
-        4,
-        null,
-        null,
-        null
-      ],
-      "/Users/autumnmartin/turing/2module/jukebox_1806_final/app/controllers/playlists_controller.rb": [
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/app/controllers/genres_controller.rb": [
         1,
         1,
         1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/autumnmartin/turing/2module/jukebox_1806_final/app/controllers/admin/categories_controller.rb": [
-        1,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/Users/autumnmartin/turing/2module/jukebox_1806_final/app/controllers/admin/base_controller.rb": [
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        2,
         null,
         null
       ],
@@ -604,16 +577,28 @@
         null,
         null
       ],
-      "/Users/autumnmartin/turing/2module/jukebox_1806_final/app/controllers/genres_controller.rb": [
-        1,
-        1,
-        null,
-        null
-      ],
       "/Users/autumnmartin/turing/2module/jukebox_1806_final/app/models/playlist_song.rb": [
         1,
         1,
         1,
+        null
+      ],
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/app/controllers/admin/categories_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/app/controllers/admin/base_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        2,
+        null,
         null
       ],
       "/Users/autumnmartin/turing/2module/jukebox_1806_final/app/controllers/sessions_controller.rb": [
@@ -662,8 +647,24 @@
         2,
         null,
         null
+      ],
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/app/controllers/carts_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        4,
+        4,
+        4,
+        4,
+        null,
+        4,
+        4,
+        null,
+        null,
+        null
       ]
     },
-    "timestamp": 1537286840
+    "timestamp": 1537286898
   }
 }
