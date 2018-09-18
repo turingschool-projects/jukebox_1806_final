@@ -1,0 +1,11 @@
+<h1>Genres</h1>
+<% if current_admin? %>
+  <%= form_for [:admin, @genre] do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <%= f.submit "Create Genre" %>
+  <% end %>
+<% end %>
+<% @genres.each do |genre| %>
+<%= genre.name %>
+<% end %>
