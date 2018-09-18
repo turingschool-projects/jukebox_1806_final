@@ -5,6 +5,8 @@ describe 'user visits genre index' do
     genre1 = Genre.create!(name: "Pop")
     genre2 = Genre.create!(name: "Rock")
 
+    user = User.create(username: "person", password: "person")
+
     visit genres_path
 
     expect(page).to have_content(genre1.name)

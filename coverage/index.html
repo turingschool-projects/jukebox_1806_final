@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-09-18T10:17:19-06:00">2018-09-18T10:17:19-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-09-18T10:28:57-06:00">2018-09-18T10:28:57-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -32,8 +32,8 @@
   <a name="AllFiles"></a>
   <div>
     <b>36</b> files in total.
-    <b>375</b> relevant lines. 
-    <span class="green"><b>373</b> lines covered</span> and
+    <b>377</b> relevant lines. 
+    <span class="green"><b>375</b> lines covered</span> and
     <span class="red"><b>2</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -77,7 +77,7 @@
         <td>10</td>
         <td>10</td>
         <td>0</td>
-        <td>9.5</td>
+        <td>9.6</td>
       </tr>
       
       <tr>
@@ -107,7 +107,7 @@
         <td>5</td>
         <td>5</td>
         <td>0</td>
-        <td>1.2</td>
+        <td>1.4</td>
       </tr>
       
       <tr>
@@ -177,7 +177,7 @@
         <td>8</td>
         <td>8</td>
         <td>0</td>
-        <td>12.4</td>
+        <td>12.5</td>
       </tr>
       
       <tr>
@@ -312,10 +312,10 @@
       
       <tr>
         <td class="strong"><a href="#27d53748bcae75ca6901d2a372480d76217ff23d" class="src_link" title="spec/features/user_sees_all_genres_spec.rb">spec/features/user_sees_all_genres_spec.rb</a></td>
-        <td class="red strong">75.0 %</td>
-        <td>14</td>
-        <td>8</td>
-        <td>6</td>
+        <td class="red strong">77.78 %</td>
+        <td>16</td>
+        <td>9</td>
+        <td>7</td>
         <td>2</td>
         <td>0.8</td>
       </tr>
@@ -333,9 +333,9 @@
       <tr>
         <td class="strong"><a href="#9a8a01ac278c306e81535cdf14db559dad5e7850" class="src_link" title="spec/features/user_sees_one_genre_spec.rb">spec/features/user_sees_one_genre_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>22</td>
-        <td>17</td>
-        <td>17</td>
+        <td>24</td>
+        <td>18</td>
+        <td>18</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -658,8 +658,8 @@
           <code class="ruby">  def set_cart</code>
         </li>
       
-        <li class="covered" data-hits="49" data-linenumber="17">
-          <span class="hits">49</span>
+        <li class="covered" data-hits="50" data-linenumber="17">
+          <span class="hits">50</span>
           
           <code class="ruby">    @cart ||= Cart.new(session[:cart])</code>
         </li>
@@ -973,8 +973,8 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="3">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="3">
+          <span class="hits">3</span>
           
           <code class="ruby">    @genres = Genre.all</code>
         </li>
@@ -1760,8 +1760,8 @@
           <code class="ruby">  def initialize(initial_content)</code>
         </li>
       
-        <li class="covered" data-hits="51" data-linenumber="6">
-          <span class="hits">51</span>
+        <li class="covered" data-hits="52" data-linenumber="6">
+          <span class="hits">52</span>
           
           <code class="ruby">    @contents = initial_content || Hash.new(0)</code>
         </li>
@@ -3785,10 +3785,10 @@
         <div class="source_table" id="27d53748bcae75ca6901d2a372480d76217ff23d">
   <div class="header">
     <h3>spec/features/user_sees_all_genres_spec.rb</h3>
-    <h4><span class="red">75.0 %</span> covered</h4>
+    <h4><span class="red">77.78 %</span> covered</h4>
     <div>
-      <b>8</b> relevant lines. 
-      <span class="green"><b>6</b> lines covered</span> and
+      <b>9</b> relevant lines. 
+      <span class="green"><b>7</b> lines covered</span> and
       <span class="red"><b>2</b> lines missed.</span>
     </div>
   </div>
@@ -3841,7 +3841,7 @@
         <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
-          <code class="ruby">    visit genres_path</code>
+          <code class="ruby">    user = User.create(username: &quot;person&quot;, password: &quot;person&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
@@ -3850,31 +3850,43 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="10">
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    expect(page).to have_content(genre1.name)</code>
+          <code class="ruby">    visit genres_path</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="11">
-          
-          
-          <code class="ruby">    expect(page).to have_content(genre2.name)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="12">
+        <li class="never" data-hits="" data-linenumber="11">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="13">
+        <li class="missed" data-hits="0" data-linenumber="12">
+          
+          
+          <code class="ruby">    expect(page).to have_content(genre1.name)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="13">
+          
+          
+          <code class="ruby">    expect(page).to have_content(genre2.name)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="14">
+        <li class="never" data-hits="" data-linenumber="16">
           
           
           <code class="ruby">end</code>
@@ -4011,8 +4023,8 @@
     <h3>spec/features/user_sees_one_genre_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>17</b> relevant lines. 
-      <span class="green"><b>17</b> lines covered</span> and
+      <b>18</b> relevant lines. 
+      <span class="green"><b>18</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -4047,73 +4059,73 @@
         <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
-          <code class="ruby">    artist_1 = Artist.create(name: &quot;Rick James&quot;)</code>
+          <code class="ruby">    user = User.create(username: &quot;person&quot;, password: &quot;person&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="6">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    artist_2 = Artist.create(name: &quot;Vanilla Ice&quot;)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="7">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    song_1 = artist_1.songs.create(title: &#39;Superfreak&#39;, length: 300, play_count: 5000000)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="8">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    song_2 = artist_2.songs.create(title: &#39;Ice Ice Baby&#39;, length: 200, play_count: 10000)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="9">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    song_3 = artist_2.songs.create(title: &#39;Another Song&#39;, length: 400, play_count: 100)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    genre1 = Genre.create!(name: &quot;Pop&quot;)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="11">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    genre2 = Genre.create!(name: &quot;Rap&quot;)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="12">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    song_genre1 = SongGenre.create!(song_id: song_1.id, genre_id: genre1.id)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="13">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    song_genre2 = SongGenre.create!(song_id: song_2.id, genre_id: genre1.id)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="14">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    song_genre3 = SongGenre.create!(song_id: song_3.id, genre_id: genre2.id)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="15">
+        <li class="never" data-hits="" data-linenumber="6">
           
           
           <code class="ruby"></code>
         </li>
       
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    artist_1 = Artist.create(name: &quot;Rick James&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    artist_2 = Artist.create(name: &quot;Vanilla Ice&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    song_1 = artist_1.songs.create(title: &#39;Superfreak&#39;, length: 300, play_count: 5000000)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    song_2 = artist_2.songs.create(title: &#39;Ice Ice Baby&#39;, length: 200, play_count: 10000)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    song_3 = artist_2.songs.create(title: &#39;Another Song&#39;, length: 400, play_count: 100)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    genre1 = Genre.create!(name: &quot;Pop&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    genre2 = Genre.create!(name: &quot;Rap&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    song_genre1 = SongGenre.create!(song_id: song_1.id, genre_id: genre1.id)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    song_genre2 = SongGenre.create!(song_id: song_2.id, genre_id: genre1.id)</code>
+        </li>
+      
         <li class="covered" data-hits="1" data-linenumber="16">
           <span class="hits">1</span>
           
-          <code class="ruby">    visit genre_path(genre1)</code>
+          <code class="ruby">    song_genre3 = SongGenre.create!(song_id: song_3.id, genre_id: genre2.id)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="17">
@@ -4125,28 +4137,40 @@
         <li class="covered" data-hits="1" data-linenumber="18">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).to have_content(song_1.title)</code>
+          <code class="ruby">    visit genre_path(genre1)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="19">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="19">
           
-          <code class="ruby">    expect(page).to have_content(song_2.title)</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="20">
           <span class="hits">1</span>
           
+          <code class="ruby">    expect(page).to have_content(song_1.title)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to have_content(song_2.title)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
+          
           <code class="ruby">    expect(page).to_not have_content(song_3.title)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="21">
+        <li class="never" data-hits="" data-linenumber="23">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="22">
+        <li class="never" data-hits="" data-linenumber="24">
           
           
           <code class="ruby">end</code>

@@ -2,6 +2,8 @@ require 'rails_helper'
 
 describe 'user visits genre show' do
   it 'displays associated songs' do
+    user = User.create(username: "person", password: "person")
+
     artist_1 = Artist.create(name: "Rick James")
     artist_2 = Artist.create(name: "Vanilla Ice")
     song_1 = artist_1.songs.create(title: 'Superfreak', length: 300, play_count: 5000000)
