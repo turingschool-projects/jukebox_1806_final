@@ -1,0 +1,5 @@
+<% @genre.songs.each do |song| %>
+<li> <%=song.name %></li>
+<li><%= song.length%></li>
+<li><%= song.play_count%></li>
+  <% end %>
