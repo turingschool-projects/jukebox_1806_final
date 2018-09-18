@@ -1,2 +1,20 @@
 <h1> <%= @song.title %> </h1>
 <p>by <%= @song.artist.name %> </p>
+
+<p>Song Rating: <%= @song.rating %></p>
+
+<p>Genres for this Song:</p>
+<% @song.genres.each do |genre| %>
+  <ul>
+    <li><%= genre.name %></li>
+  </ul>
+<% end %>
+
+<p>Songs with the same rating: </p>
+ <div class='similar-songs'>
+   <% @song.similar_songs.each do |similar_song| %>
+     <ul>
+       <li><%= similar_song.title %></li>
+     </ul>
+  <% end %>
+</div>
