@@ -13,5 +13,12 @@ describe 'as a visitor' do
       expect(page).to have_content(@genre_1.name)
       expect(page).to have_content(@genre_2.name)
     end
+    it "should link to genre show page" do
+      visit genres_path
+  
+      click_on "#{@genre_1.name}"
+
+      expect(current_path).to eq(genre_path(@genre_1))
+    end
   end
 end

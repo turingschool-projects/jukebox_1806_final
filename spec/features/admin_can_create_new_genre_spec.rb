@@ -10,7 +10,6 @@ describe 'as an admin' do
     end
     it "should allow admin to create new genre" do
       visit genres_path
-
       click_on 'Create New Genre'
       expect(current_path).to eq(new_admin_genre_path)
 
