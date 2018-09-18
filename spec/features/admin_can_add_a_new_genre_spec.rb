@@ -23,15 +23,17 @@ describe "User visits genre index" do
         artist_1 = Artist.create!(name: 'Afroman')
         artist_2 = Artist.create!(name: 'Johnny Cash')
         genre_1.songs.create!(title: 'colt 45', length: 100, play_count: 100, artist_id: artist_1.id)
+        genre_1.songs.create!(title: 'Because I Got High', length: 100, play_count: 100, artist_id: artist_1.id)
         genre_2.songs.create!(title: 'hurt', length: 100, play_count: 100, artist_id: artist_2.id)
 
 
         visit genres_path
         expect(page).to_not have_field(:name)
         click_on('Hip Hop')
-        
+
         expect(current_path).to eq(genre_path(genre_1))
         expect(page).to have_content(genre_1.songs.first.title)
+        expect(page).to have_content(genre_1.songs.last.title)
         expect(page).to_not have_content(genre_2.songs.first.title)
       end
     end
