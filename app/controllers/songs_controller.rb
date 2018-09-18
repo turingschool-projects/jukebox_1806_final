@@ -15,7 +15,7 @@ class SongsController < ApplicationController
   end
 
   def show
-    @song = Song.find_by_slug(params[:slug])
+    @song = Song.find_by_slug(params[:id])
   end
 
   private
