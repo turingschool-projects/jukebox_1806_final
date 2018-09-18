@@ -39,5 +39,13 @@ describe 'As a visitor' do
 				expect(page).to have_content("Rating: #{@song2.rating}")
 			end
 		end
+		it 'displays name and rating of song with highest rating' do
+			visit genre_path(@genre1)
+
+			within("#lowest-rated-song") do
+				expect(page).to have_content(@song1.title)
+				expect(page).to have_content("Rating: #{@song1.rating}")
+			end
+		end
 	end
 end

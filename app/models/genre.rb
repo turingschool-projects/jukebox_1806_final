@@ -10,9 +10,17 @@ class Genre < ApplicationRecord
     songs.find_by_rating(highest_rating)
   end
 
+  def lowest_rated_song
+    songs.find_by_rating(lowest_rating)
+  end
+
   private
 
   def highest_rating
     songs.maximum(:rating)
+  end
+
+  def lowest_rating
+    songs.minimum(:rating)
   end
 end

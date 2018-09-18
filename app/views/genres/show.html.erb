@@ -6,6 +6,11 @@
   <p>Rating: <%= @genre.highest_rated_song.rating %></p>
 </div>
 
+<div id="lowest-rated-song">
+  <h4><%= @genre.lowest_rated_song.title %></h4>
+  <p>Rating: <%= @genre.lowest_rated_song.rating %></p>
+</div>
+
 <h2>Songs in this Genre</h2>
 <% @genre_songs.each do |song| %>
 	<ul>

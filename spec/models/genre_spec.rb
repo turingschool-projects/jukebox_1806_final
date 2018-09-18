@@ -24,5 +24,10 @@ describe Genre, type: :model do
       expect(@genre.highest_rated_song.title).to eq(@song1.title)
       expect(@genre.highest_rated_song.rating).to eq(@song1.rating)
     end
+    it '#lowest_rated_song' do
+      expect(@genre.lowest_rated_song).to eq(@song2)
+      expect(@genre.lowest_rated_song.title).to eq(@song2.title)
+      expect(@genre.lowest_rated_song.rating).to eq(@song2.rating)
+    end
   end
 end
