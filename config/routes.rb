@@ -10,9 +10,11 @@ Rails.application.routes.draw do
 
   resources :playlists, only: [:new, :create, :show]
   resources :users, only: [:new, :create, :show]
+  resources :genres, only: [:index, :show]
 
   namespace :admin do
-    resources :categories, only: :index
+    resources :categories, only: [:index]
+    resources :genres, only: [:index, :new, :create]
   end
 
   resources :carts, only: [:create]
