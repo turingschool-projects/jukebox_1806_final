@@ -15,14 +15,13 @@ describe 'genre index' do
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(admin)
 
       visit genres_path
-      save_and_open_page
-      fill_in :name, with: "Disco"
+
+      fill_in :genre_name, with: "Disco"
       click_on "Create Genre"
 
       new_genre = Genre.last
       expect(current_path).to eq(genres_path)
-      expect(page).to have_content(new_genre)
-      expect(page).to have_content(new_genre)
+      expect(page).to have_content(new_genre.name)
       expect(page).to have_content(genre_1.name)
       expect(page).to have_content(genre_2.name)
     end
