@@ -1,12 +1,17 @@
-<h1> Genres for this <%= @song.title %>
-  
-<% @song.genres.each do |genre| %>
-  <%= genre.name %>
-<% end %>
-
-
 <h1> <%= @song.title %> </h1>
 <p>by <%= @song.artist.name %> </p>
 <p>by <%= @song.rating %> </p>
+
+
+<h1> Genres for this Song: </h1>
+  
+<% @song.genres.each do |genre| %>
+  <ul>
+    <li> <%= genre.name %> </li>
+  </ul>
+<% end %>
+
+
+
 
 

@@ -10,7 +10,7 @@ describe 'genre index' do
 
     expect(page).to have_content(genre_1.name)
     expect(page).to have_content(genre_2.name)
-    expect(page).to_not have_content('Create Genre')
+    expect(page).to_not have_content('Submit')
   end
   
   describe 'As an Admin' do
@@ -35,7 +35,7 @@ describe 'genre index' do
   end
   
   describe 'Visitor' do 
-    it 'they can link to genre show page the index page' do 
+    it 'they can link to genre show page from the index page' do 
       genre_1 = Genre.create(name: "Jazz")
       genre_2 = Genre.create(name: "Blues")
 

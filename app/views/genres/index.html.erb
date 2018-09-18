@@ -1,5 +1,8 @@
+
 <p> <% @genres.each do |genre| %>
-  <%= link_to genre.name, genre_path(genre) %>
+  <ul>
+    <li> <%= link_to genre.name, genre_path(genre) %> </li>
+  </ul>
 <% end %>
 
 <% if current_admin? %>
