@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-09-18T10:06:33-06:00">2018-09-18T10:06:33-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-09-18T10:17:19-06:00">2018-09-18T10:17:19-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">100.0%</span></span>
+    (<span class="covered_percent"><span class="green">99.47%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.7
+         1.67
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>35</b> files in total.
-    <b>360</b> relevant lines. 
-    <span class="green"><b>360</b> lines covered</span> and
-    <span class="red"><b>0</b> lines missed </span>
+    <b>36</b> files in total.
+    <b>375</b> relevant lines. 
+    <span class="green"><b>373</b> lines covered</span> and
+    <span class="red"><b>2</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -107,7 +107,7 @@
         <td>5</td>
         <td>5</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>1.2</td>
       </tr>
       
       <tr>
@@ -241,6 +241,16 @@
       </tr>
       
       <tr>
+        <td class="strong"><a href="#ce822cf866239c6aabd913a317ce3dfa67c9f558" class="src_link" title="spec/features/admin_sees_categories_index_spec.rb">spec/features/admin_sees_categories_index_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>28</td>
+        <td>15</td>
+        <td>15</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#846771615cd271806d5500bf3497bcc6a9aa9d3d" class="src_link" title="spec/features/user_can_add_songs_to_a_cart_spec.rb">spec/features/user_can_add_songs_to_a_cart_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>42</td>
@@ -302,12 +312,12 @@
       
       <tr>
         <td class="strong"><a href="#27d53748bcae75ca6901d2a372480d76217ff23d" class="src_link" title="spec/features/user_sees_all_genres_spec.rb">spec/features/user_sees_all_genres_spec.rb</a></td>
-        <td class="green strong">100.0 %</td>
+        <td class="red strong">75.0 %</td>
         <td>14</td>
         <td>8</td>
-        <td>8</td>
-        <td>0</td>
-        <td>1.0</td>
+        <td>6</td>
+        <td>2</td>
+        <td>0.8</td>
       </tr>
       
       <tr>
@@ -600,8 +610,8 @@
           <code class="ruby">  def current_user</code>
         </li>
       
-        <li class="covered" data-hits="38" data-linenumber="9">
-          <span class="hits">38</span>
+        <li class="covered" data-hits="37" data-linenumber="9">
+          <span class="hits">37</span>
           
           <code class="ruby">    @current_user ||= User.find(session[:user_id]) if session[:user_id]</code>
         </li>
@@ -648,8 +658,8 @@
           <code class="ruby">  def set_cart</code>
         </li>
       
-        <li class="covered" data-hits="48" data-linenumber="17">
-          <span class="hits">48</span>
+        <li class="covered" data-hits="49" data-linenumber="17">
+          <span class="hits">49</span>
           
           <code class="ruby">    @cart ||= Cart.new(session[:cart])</code>
         </li>
@@ -963,8 +973,8 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="3">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="3">
+          <span class="hits">2</span>
           
           <code class="ruby">    @genres = Genre.all</code>
         </li>
@@ -1750,8 +1760,8 @@
           <code class="ruby">  def initialize(initial_content)</code>
         </li>
       
-        <li class="covered" data-hits="50" data-linenumber="6">
-          <span class="hits">50</span>
+        <li class="covered" data-hits="51" data-linenumber="6">
+          <span class="hits">51</span>
           
           <code class="ruby">    @contents = initial_content || Hash.new(0)</code>
         </li>
@@ -1774,8 +1784,8 @@
           <code class="ruby">  def total_count</code>
         </li>
       
-        <li class="covered" data-hits="38" data-linenumber="10">
-          <span class="hits">38</span>
+        <li class="covered" data-hits="37" data-linenumber="10">
+          <span class="hits">37</span>
           
           <code class="ruby">    @contents.values.sum</code>
         </li>
@@ -2201,6 +2211,193 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="ce822cf866239c6aabd913a317ce3dfa67c9f558">
+  <div class="header">
+    <h3>spec/features/admin_sees_categories_index_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>15</b> relevant lines. 
+      <span class="green"><b>15</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &quot;rails_helper&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe &quot;User visits categorires index&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  context &quot;as an admin&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &quot;allows admin to see all categories&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      admin = User.create(username: &quot;Ian&quot;, password: &quot;test123&quot;, role: 1)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(admin)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      visit admin_categories_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(page).to have_content(&quot;Admin Categories&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  context &quot;as a default user&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &quot;does not allow default user to see admin categories&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      user = User.create(username: &quot;Dione&quot;, password: &quot;test123&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      visit admin_categories_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="24">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(page).to_not have_content(&quot;Admin Categories&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="25">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(page).to have_content(&quot;The page you were looking for doesn&#39;t exist.&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
           
           
           <code class="ruby">end</code>
@@ -3588,11 +3785,11 @@
         <div class="source_table" id="27d53748bcae75ca6901d2a372480d76217ff23d">
   <div class="header">
     <h3>spec/features/user_sees_all_genres_spec.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="red">75.0 %</span> covered</h4>
     <div>
       <b>8</b> relevant lines. 
-      <span class="green"><b>8</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <span class="green"><b>6</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
     </div>
   </div>
   
@@ -3653,14 +3850,14 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="10">
+          
           
           <code class="ruby">    expect(page).to have_content(genre1.name)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="11">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="11">
+          
           
           <code class="ruby">    expect(page).to have_content(genre2.name)</code>
         </li>

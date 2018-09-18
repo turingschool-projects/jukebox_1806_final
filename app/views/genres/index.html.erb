@@ -3,3 +3,7 @@
 <% @genres.each do |g| %>
   <p><%= g.name %></p>
 <% end %>
+
+<% if current_admin? %>
+  <%= render partial: "form" %>
+<% end %>
