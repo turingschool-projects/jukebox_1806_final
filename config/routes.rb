@@ -15,6 +15,8 @@ Rails.application.routes.draw do
     resources :categories, only: :index
   end
 
+  resources :genres, only: [:index, :create, :show]
+
   resources :carts, only: [:create]
 
   get '/login', to: 'sessions#new'
