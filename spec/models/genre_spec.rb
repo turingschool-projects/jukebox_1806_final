@@ -17,7 +17,7 @@ describe Genre, type: :model do
       artist_1 = Artist.create(name: "Rick James")
       song_1 = genre_1.songs.create(artist_id: artist_1.id, title: 'Superfreak', length: 300, play_count: 5000000, rating: 1)
       song_2 = genre_1.songs.create(artist_id: artist_1.id, title: 'Mary Jane', length: 300, play_count: 5000000, rating: 3)
-      song_3 = artist_1.songs.create(title: "Cotton-Eyed Joe", length: 400, play_count: 10000, rating: 4) 
+      song_3 = genre_2.songs.create(artist_id: artist_1.id, title: "Cotton-Eyed Joe", length: 400, play_count: 10000, rating: 4) 
 
       expect(genre_1.average_rating).to eq(2)
     end
