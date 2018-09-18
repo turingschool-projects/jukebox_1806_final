@@ -26,7 +26,6 @@ describe "Genre Show Page" do
       song3 = genre2.songs.create(title: 'Song 3', length: 100, play_count: 5, artist_id: artist.id, rating: 5)
 
       visit genre_path(genre1)
-      save_and_open_page
 
       expect(page).to have_content("Average Song Rating: #{genre1.average_rating}") 
 
