@@ -13,7 +13,7 @@ describe "As a visitor" do
       song.genres << genre_2
       song.genres << genre_3
 
-      visit song_path(song)
+      visit song_path(song.slug)
 
       expect(page).to have_content(genre_1.name)
       expect(page).to have_content(genre_2.name)

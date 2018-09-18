@@ -2,3 +2,10 @@
 <p>by <%= @song.artist.name %> </p>
 
 <p>Song Rating: <%= @song.rating %></p>
+
+<p>Genres for this Song:</p>
+<% @song.genres.each do |genre| %>
+  <ul>
+    <li><%= genre.name %></li>
+  </ul>
+<% end %>
