@@ -19,12 +19,11 @@ describe Genre, type: :model do
         song_1 = artist_1.songs.create(title: 'Superfreak', length: 300, play_count: 5000000, rating: 2)
         song_2 = artist_2.songs.create(title: 'Ice Ice Baby', length: 200, play_count: 10000, rating: 1)
         song_3 = artist_2.songs.create(title: 'Another Song', length: 242, play_count: 33353, rating: 5)
-        song_4 = artist_1.songs.create(title: 'Not Alternative', length: 211, play_count: 983)
         genre.songs << song_1
         genre.songs << song_2
         genre.songs << song_3
 
-        expect(genre.avg_song_rating).to eq((song_1.rating + song_2.rating + song_3.rating) / genre.songs.count)
+        expect(genre.avg_song_rating).to eq(((song_1.rating + song_2.rating + song_3.rating) / genre.songs.count.to_f).round(2))
       end
     end
   end
