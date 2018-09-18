@@ -24,6 +24,7 @@ describe 'genre index' do
 
     expect(current_path).to eq(genres_path)
     expect(page).to have_content("Create New Genre Here")
+    expect(page).to have_button("Create Genre")
     expect(Genre.last.title).to eq("test")
     expect(page).to have_content(Genre.last.title)
   end
@@ -42,9 +43,8 @@ describe 'genre index' do
 
     expect(page).to have_content(genre_1.title)
     expect(page).to have_content(genre_2.title)
+    expect(current_path).to eq(genres_path)
     expect(page).to_not have_content("Create New Genre Here")
-    expect(current_path).to eq(genres_path)
-    expect(current_path).to eq(genres_path)
     expect(page).to_not have_button("Create Genre")
   end
 end

@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-09-18T10:36:44-06:00">2018-09-18T10:36:44-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-09-18T10:43:54-06:00">2018-09-18T10:43:54-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -2513,115 +2513,115 @@
         <li class="covered" data-hits="1" data-linenumber="27">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(Genre.last.title).to eq(&quot;test&quot;)</code>
+          <code class="ruby">    expect(page).to have_button(&quot;Create Genre&quot;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="28">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).to have_content(Genre.last.title)</code>
+          <code class="ruby">    expect(Genre.last.title).to eq(&quot;test&quot;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="29">
+        <li class="covered" data-hits="1" data-linenumber="29">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">    expect(page).to have_content(Genre.last.title)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="30">
           
           
-          <code class="ruby">end</code>
+          <code class="ruby">  end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="31">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="31">
           
-          <code class="ruby">describe &#39;genre index&#39; do</code>
+          
+          <code class="ruby">end</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="32">
           <span class="hits">1</span>
           
+          <code class="ruby">describe &#39;genre index&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="33">
+          <span class="hits">1</span>
+          
           <code class="ruby">  it &#39;visitor cannot create new genres thru genre index&#39; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="33">
+        <li class="never" data-hits="" data-linenumber="34">
           
           
           <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="34">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    artist_1 = Artist.create(name: &quot;Rick James&quot;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="35">
           <span class="hits">1</span>
           
-          <code class="ruby">    artist_2 = Artist.create(name: &quot;Vanilla Ice&quot;)</code>
+          <code class="ruby">    artist_1 = Artist.create(name: &quot;Rick James&quot;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="36">
           <span class="hits">1</span>
           
-          <code class="ruby">    song_1 = artist_1.songs.create(title: &#39;Superfreak&#39;, length: 300, play_count: 5000000)</code>
+          <code class="ruby">    artist_2 = Artist.create(name: &quot;Vanilla Ice&quot;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="37">
           <span class="hits">1</span>
           
-          <code class="ruby">    song_2 = artist_2.songs.create(title: &#39;Ice Ice Baby&#39;, length: 200, play_count: 10000)</code>
+          <code class="ruby">    song_1 = artist_1.songs.create(title: &#39;Superfreak&#39;, length: 300, play_count: 5000000)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="38">
           <span class="hits">1</span>
           
-          <code class="ruby">    genre_1 = Genre.create(title: &quot;Funk&quot;, songs: [song_1])</code>
+          <code class="ruby">    song_2 = artist_2.songs.create(title: &#39;Ice Ice Baby&#39;, length: 200, play_count: 10000)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="39">
           <span class="hits">1</span>
           
+          <code class="ruby">    genre_1 = Genre.create(title: &quot;Funk&quot;, songs: [song_1])</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="40">
+          <span class="hits">1</span>
+          
           <code class="ruby">    genre_2 = Genre.create(title: &quot;Rap&quot;, songs: [song_2])</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="40">
+        <li class="never" data-hits="" data-linenumber="41">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="41">
+        <li class="covered" data-hits="1" data-linenumber="42">
           <span class="hits">1</span>
           
           <code class="ruby">    visit genres_path</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="42">
+        <li class="never" data-hits="" data-linenumber="43">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="43">
+        <li class="covered" data-hits="1" data-linenumber="44">
           <span class="hits">1</span>
           
           <code class="ruby">    expect(page).to have_content(genre_1.title)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="44">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    expect(page).to have_content(genre_2.title)</code>
-        </li>
-      
         <li class="covered" data-hits="1" data-linenumber="45">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).to_not have_content(&quot;Create New Genre Here&quot;)</code>
+          <code class="ruby">    expect(page).to have_content(genre_2.title)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="46">
@@ -2633,7 +2633,7 @@
         <li class="covered" data-hits="1" data-linenumber="47">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(current_path).to eq(genres_path)</code>
+          <code class="ruby">    expect(page).to_not have_content(&quot;Create New Genre Here&quot;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="48">
