@@ -22,6 +22,7 @@ describe 'as a visitor' do
       visit genre_path(genre)
       save_and_open_page
       expect(page).to have_content("Average rating for songs of this genre: #{genre.average_song_rating}")
+      expect(page).to have_content("Average rating for songs of this genre: 4")
 
     end
   end
