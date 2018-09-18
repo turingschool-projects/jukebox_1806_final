@@ -43,6 +43,6 @@ describe 'user visits genre show' do
     visit genres_path
 
     click_on("#{genre1.name}")
-    expect(current_path).to eq(genre_path("#{genre1.name}"))
+    expect(current_path).to eq(genre_path(genre1))
   end
 end

@@ -1,5 +1,7 @@
-<h1>All Genres</h1>
+<h1>All Genres - Admin View</h1>
 
 <% @genres.each do |g| %>
   <p><%= link_to "#{g.name}", genre_path(g) %></p>
 <% end %>
+
+  <%= render partial: "form" %>
