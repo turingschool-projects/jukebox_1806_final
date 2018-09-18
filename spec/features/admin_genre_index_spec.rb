@@ -26,5 +26,18 @@ describe 'As an admin' do
 			expect(page).to have_field(:genre_name)
 			expect(page).to have_button('Create Genre')
 		end
+		it 'allows me to add a new genre' do
+			new_genre = 'Bluegrass'
+
+			visit genres_path
+
+			fill_in :genre_name, with: new_genre
+			click_button 'Create Genre'
+
+			expect(current_path).to eq(genres_path)
+			expect(page).to have_content(new_genre)
+			expect(page).to have_content(@genre1.name)
+			expect(page).to have_content(@genre2.name)
+		end
 	end
 end

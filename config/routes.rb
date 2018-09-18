@@ -8,7 +8,7 @@ Rails.application.routes.draw do
     resources :songs, only: [:show, :new, :create], param: :slug
   end
 
-  resources :genres, only: [:index]
+  resources :genres, only: [:index, :create]
 
   resources :playlists, only: [:new, :create, :show]
   resources :users, only: [:new, :create, :show]
