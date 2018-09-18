@@ -1,7 +1,89 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/id/src/turing/mod2/jukebox_1806/spec/features/user_can_add_songs_to_a_cart_spec.rb": [
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/spec/features/admin_sees_categories_index_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/spec/features/admin_views_genre_index_page_spec.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/spec/features/user_can_add_songs_to_a_cart_spec.rb": [
         1,
         null,
         1,
@@ -45,7 +127,7 @@
         null,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/spec/features/user_can_create_an_artist_spec.rb": [
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/spec/features/user_can_create_an_artist_spec.rb": [
         1,
         null,
         1,
@@ -71,7 +153,7 @@
         null,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/spec/features/user_can_create_playlist_spec.rb": [
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/spec/features/user_can_create_playlist_spec.rb": [
         1,
         null,
         1,
@@ -87,7 +169,7 @@
         null,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/spec/features/user_can_lookup_songs_by_slug_spec.rb": [
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/spec/features/user_can_lookup_songs_by_slug_spec.rb": [
         1,
         null,
         1,
@@ -106,7 +188,7 @@
         null,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/spec/features/user_can_register_and_login_spec.rb": [
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/spec/features/user_can_register_and_login_spec.rb": [
         1,
         null,
         1,
@@ -200,7 +282,7 @@
         null,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/spec/features/user_creates_new_song_spec.rb": [
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/spec/features/user_creates_new_song_spec.rb": [
         1,
         null,
         1,
@@ -223,7 +305,7 @@
         null,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/spec/features/user_sees_all_songs_spec.rb": [
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/spec/features/user_sees_all_songs_spec.rb": [
         1,
         null,
         1,
@@ -242,7 +324,51 @@
         null,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/spec/models/artist_spec.rb": [
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/spec/features/user_views_genre_index_spec.rb": [
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/spec/features/user_views_ratings_for_songs_on_show_page_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null
+      ],
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/spec/models/artist_spec.rb": [
         1,
         null,
         1,
@@ -255,19 +381,19 @@
         null,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/app/models/artist.rb": [
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/app/models/artist.rb": [
         1,
         1,
         null,
         1,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/app/models/application_record.rb": [
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/app/models/application_record.rb": [
         1,
         1,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/spec/models/cart_spec.rb": [
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/spec/models/cart_spec.rb": [
         1,
         null,
         1,
@@ -291,17 +417,17 @@
         null,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/app/models/cart.rb": [
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/app/models/cart.rb": [
         1,
         null,
         1,
         null,
         1,
-        47,
+        56,
         null,
         null,
         1,
-        35,
+        42,
         null,
         null,
         1,
@@ -310,7 +436,7 @@
         null,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/spec/models/playlist_spec.rb": [
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/spec/models/genre_song_spec.rb": [
         1,
         null,
         1,
@@ -320,13 +446,79 @@
         null,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/app/models/playlist.rb": [
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/app/models/genre_song.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/spec/models/song_spec.rb": [
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/spec/models/genre_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        2,
+        null,
+        1,
+        2,
+        null,
+        null
+      ],
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/app/models/genre.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        null
+      ],
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/spec/models/playlist_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        2,
+        null,
+        null
+      ],
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/app/models/playlist.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/spec/models/song_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        null,
+        null
+      ],
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/app/models/song.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        10,
+        null,
+        null
+      ],
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/spec/models/user_spec.rb": [
         1,
         null,
         1,
@@ -335,31 +527,6 @@
         2,
         2,
         null,
-        null
-      ],
-      "/Users/id/src/turing/mod2/jukebox_1806/app/models/song.rb": [
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        1,
-        8,
-        null,
-        null
-      ],
-      "/Users/id/src/turing/mod2/jukebox_1806/spec/models/user_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        2,
-        2,
-        2,
-        null,
         null,
         1,
         1,
@@ -377,7 +544,7 @@
         null,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/app/models/user.rb": [
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/app/models/user.rb": [
         1,
         1,
         1,
@@ -387,13 +554,7 @@
         1,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/app/models/playlist_song.rb": [
-        1,
-        1,
-        1,
-        null
-      ],
-      "/Users/id/src/turing/mod2/jukebox_1806/app/controllers/songs_controller.rb": [
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/app/controllers/songs_controller.rb": [
         1,
         1,
         13,
@@ -411,38 +572,94 @@
         null,
         null,
         1,
+        null,
+        3,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        41,
+        null,
+        null,
+        1,
+        9,
+        null,
+        null,
+        1,
+        54,
+        null,
+        null
+      ],
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/app/controllers/genres_controller.rb": [
+        1,
+        null,
+        1,
+        7,
+        7,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/app/controllers/carts_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        4,
+        4,
+        4,
+        4,
+        null,
+        4,
+        4,
+        null,
+        null,
+        null
+      ],
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/app/controllers/admin/categories_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/app/controllers/admin/base_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
         2,
         null,
-        null,
-        1,
-        null,
-        1,
-        1,
-        null,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/app/controllers/application_controller.rb": [
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
-        1,
-        35,
-        null,
-        null,
-        1,
-        2,
-        null,
-        null,
-        1,
-        45,
-        null,
-        null
-      ],
-      "/Users/id/src/turing/mod2/jukebox_1806/app/controllers/playlists_controller.rb": [
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/app/controllers/playlists_controller.rb": [
         1,
         1,
         1,
@@ -464,7 +681,13 @@
         null,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/app/controllers/sessions_controller.rb": [
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/app/models/playlist_song.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/app/controllers/sessions_controller.rb": [
         1,
         1,
         null,
@@ -485,7 +708,7 @@
         null,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/app/controllers/users_controller.rb": [
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/app/controllers/users_controller.rb": [
         1,
         1,
         2,
@@ -511,41 +734,7 @@
         null,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/app/controllers/carts_controller.rb": [
-        1,
-        1,
-        null,
-        1,
-        4,
-        4,
-        4,
-        4,
-        null,
-        4,
-        4,
-        null,
-        null,
-        null
-      ],
-      "/Users/id/src/turing/mod2/jukebox_1806/app/controllers/admin/categories_controller.rb": [
-        1,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/Users/id/src/turing/mod2/jukebox_1806/app/controllers/admin/base_controller.rb": [
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        2,
-        null,
-        null
-      ],
-      "/Users/id/src/turing/mod2/jukebox_1806/app/controllers/artists_controller.rb": [
+      "/Users/autumnmartin/turing/2module/jukebox_1806_final/app/controllers/artists_controller.rb": [
         1,
         null,
         1,
@@ -572,6 +761,6 @@
         null
       ]
     },
-    "timestamp": 1537206775
+    "timestamp": 1537289631
   }
 }
