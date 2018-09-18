@@ -15,7 +15,7 @@ describe 'genre index' do
   
   describe 'As an Admin' do
     describe 'they can see a form to create new genre' do 
-      it 'they link from the index page' do
+      it 'they can create a new genre' do
         genre_1 = Genre.create(name: "Jazz")
         genre_2 = Genre.create(name: "Blues")
         admin = User.create(username: 'Rajaa', password: '123', role: 1)
@@ -23,14 +23,10 @@ describe 'genre index' do
         allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(admin)
         
         visit genres_path
-        click_on 'Create Genre' 
-        
-        expect(current_path).to eq(new_admin_genre_path)
         
         fill_in :genre_name, with: 'House'
         click_on 'Submit'
         
-        expect(current_path).to eq(genres_path)
         expect(page).to have_content(genre_1.name)
         expect(page).to have_content(genre_2.name)
         expect(page).to have_content(Genre.last.name)
