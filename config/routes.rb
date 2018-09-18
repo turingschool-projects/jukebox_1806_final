@@ -17,7 +17,7 @@ Rails.application.routes.draw do
 
   resources :carts, only: [:create]
 
-  resources :genre
+  resources :genres
 
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
