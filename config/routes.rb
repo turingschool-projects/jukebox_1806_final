@@ -2,7 +2,9 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   root 'songs#index'
-  resources :songs, only: [:index]
+  resources :songs, only: [:index, :show]
+  resources :genres, only: [:index, :show]
+  
 
   resources :artists, only: [:new, :create, :index], shallow: true do
     resources :songs, only: [:show, :new, :create], param: :slug
@@ -13,6 +15,7 @@ Rails.application.routes.draw do
 
   namespace :admin do
     resources :categories, only: :index
+    resources :genres, only: [:create]
   end
 
   resources :carts, only: [:create]

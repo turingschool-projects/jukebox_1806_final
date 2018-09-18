@@ -6,6 +6,7 @@ describe 'When a user adds songs to their cart' do
     song = artist.songs.create(title: "Purple Rain", length: 209, play_count: 3445)
 
     visit songs_path
+  
 
     click_on "Add Song"
 
