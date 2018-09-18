@@ -7,6 +7,8 @@ describe 'user visits genre index' do
 
     user = User.create(username: "person", password: "person")
 
+    allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
+
     visit genres_path
 
     expect(page).to have_content(genre1.name)
