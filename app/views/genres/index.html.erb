@@ -1,0 +1,19 @@
+<h1>All Genres</h1>
+
+<% @genres.each do |gen| %>
+  <%= link_to gen.name, genre_path(gen) %>
+  <%= gen.name %>
+  <% end %>
+
+
+
+<% if current_user %>
+  <% if current_user.admin? %>
+  <%= form_for @new_gen do |f| %>
+              <%= f.label :Name %>
+              <%= f.text_area :name %>
+            <%= f.submit "Submit" %>
+            <% end %>
+            <% end %>
+
+  <% end %>
