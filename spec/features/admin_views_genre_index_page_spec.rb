@@ -2,6 +2,7 @@
 #   When I visit the same genre index page that visitors see,
 #   I see the same information visitors see,
 #     And I also see a form to create a new genre.
+
 require 'rails_helper'
 
 describe 'genre index' do
