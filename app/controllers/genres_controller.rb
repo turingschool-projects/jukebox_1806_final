@@ -5,9 +5,10 @@ class GenresController < ApplicationController
   end
 
   def show
+    #binding.pry
     @genre = Genre.find(params[:id])
   end
-  
+
   def new
     @genre = Genre.new
   end
