@@ -10,6 +10,7 @@ describe 'song show' do
     visit song_path(song_1)
 
     expect(page).to have_content(song_1.title)
+    expect(page).to have_content(song_1.rating)
     expect(page).to have_content("Play Count: #{song_1.play_count}")
     expect(page).to_not have_content(song_2.title)
     expect(page).to_not have_content("Play Count: #{song_2.play_count}")
