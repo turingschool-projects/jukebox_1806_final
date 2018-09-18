@@ -5,7 +5,9 @@ describe 'admin visits genre index page' do
     genre1 = Genre.create(name: 'Pop')
     genre2 = Genre.create(name: 'Wizard Rock')
     admin = User.create!(username: "Finn", password: "123", role: 1)
+
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(admin)
+
     visit genres_path
 
     expect(page).to have_content("Create A New Genre")

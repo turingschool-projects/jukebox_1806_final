@@ -2,7 +2,7 @@
 <% if current_admin? %>
 <h2>Create A New Genre</h2>
 
-<%= form_for [Genre.create] do |f| %>
+<%= form_for [:admin, @genre] do |f| %>
 <%= f.label :name %>
 <%= f.text_field :name %>
   <%= f.submit %>

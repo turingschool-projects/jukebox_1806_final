@@ -1,20 +1,8 @@
-class Admin::GenresController < ApplicationController
-  before_action :set_genre, only: [:show]
-
-  def index
-    @genres = Genre.all
-    @genre = Genre.create(genre_params)
-  end
-
-  def new
-    @genre = Genre.new
-    @admin = current_user.role
-
-  end
+class Admin::GenresController < Admin::BaseController
 
   def create
-    @admin = current_user.role
     @genre = Genre.create(genre_params)
+    redirect_to genres_path
   end
 
   private
@@ -22,8 +10,5 @@ class Admin::GenresController < ApplicationController
     params.require(:genre).permit(:name)
   end
 
-  def set_genre
-    @genre = Genre.find_by(params[:name])
-  end
 
 end
