@@ -6,4 +6,12 @@ class Genre < ApplicationRecord
   def avg_song_rating
     songs.average(:rating).round(2)
   end
+
+  def highest_rated
+    songs.where(rating: songs.maximum(:rating)).first
+  end
+
+  def lowest_rated
+    songs.where(rating: songs.minimum(:rating)).first
+  end
 end
