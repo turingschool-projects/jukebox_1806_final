@@ -38,5 +38,14 @@ describe "As an admin" do
       expect(current_path).to eq(genres_path)
       expect(page).to have_content(new_name)
     end
+
+    it 'should not allow a visitor to make new genre' do
+      visit genres_path
+
+      expect(page).to_not have_content("Add New Genre")
+
+      visit new_admin_genre_path
+      expect(page).to have_content("The page you were looking for doesn't exist.")
+    end
   end
 end

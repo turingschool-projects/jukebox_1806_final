@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   root 'songs#index'
   resources :songs, only: [:index]
 
-  resources :genres, only: [:index]
+  resources :genres, only: [:index, :show]
 
   resources :artists, only: [:new, :create, :index], shallow: true do
     resources :songs, only: [:show, :new, :create], param: :slug
