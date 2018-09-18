@@ -2,3 +2,10 @@
 <p>Length: <%= @song.length %> </p>
 <p>Play Count: <%= @song.play_count %> </p>
 <p>Rating: <%= @song.rating %> </p>
+
+<h2>All Genres for this Song:</h2>
+  <% @genres.each do |genre| %>
+  <ul>
+    <li><%= genre.name %></li>
+  </ul>
+  <% end %>
