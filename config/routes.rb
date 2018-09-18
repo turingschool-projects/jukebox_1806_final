@@ -13,13 +13,15 @@ Rails.application.routes.draw do
 
   namespace :admin do
     resources :categories, only: :index
+    resources :genres, only: [:create]
   end
 
   resources :carts, only: [:create]
+
+  resources :genres, only: [:index, :create, :show]
 
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   get '/logout', to: 'sessions#destroy'
   delete '/logout', to: 'sessions#destroy'
-
 end

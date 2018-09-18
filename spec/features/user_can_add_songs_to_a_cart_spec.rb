@@ -3,7 +3,7 @@ require 'rails_helper'
 describe 'When a user adds songs to their cart' do
   it 'a message is displayed' do
     artist = Artist.create(name: "Prince")
-    song = artist.songs.create(title: "Purple Rain", length: 209, play_count: 3445)
+    song = artist.songs.create(title: "Purple Rain", length: 209, play_count: 3445, rating: 3)
 
     visit songs_path
 
@@ -14,7 +14,7 @@ describe 'When a user adds songs to their cart' do
 
   it "the message correctly increments for multiple songs" do
     artist = Artist.create(name: "Prince")
-    song = artist.songs.create(title: "Purple Rain", length: 209, play_count: 3445)
+    song = artist.songs.create(title: "Purple Rain", length: 209, play_count: 3445, rating: 3)
 
     visit songs_path
 
@@ -29,7 +29,7 @@ describe 'When a user adds songs to their cart' do
 
   it "the total number of songs in the cart increments" do
     artist = Artist.create(name: "Prince")
-    song = artist.songs.create(title: "Purple Rain", length: 209, play_count: 3445)
+    song = artist.songs.create(title: "Purple Rain", length: 209, play_count: 3445, rating: 3)
 
     visit songs_path
 
