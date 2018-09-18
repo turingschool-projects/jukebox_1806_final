@@ -310,6 +310,28 @@
         null,
         null
       ],
+      "/Users/tara/turing/2mod/final/jukebox_1806_final/spec/models/genre_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        null,
+        null,
+        1,
+        2,
+        2,
+        null,
+        null
+      ],
+      "/Users/tara/turing/2mod/final/jukebox_1806_final/app/models/genre.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
       "/Users/tara/turing/2mod/final/jukebox_1806_final/spec/models/playlist_spec.rb": [
         1,
         null,
@@ -326,6 +348,22 @@
         1,
         null
       ],
+      "/Users/tara/turing/2mod/final/jukebox_1806_final/spec/models/song_genre_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        2,
+        null,
+        null
+      ],
+      "/Users/tara/turing/2mod/final/jukebox_1806_final/app/models/song_genre.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
       "/Users/tara/turing/2mod/final/jukebox_1806_final/spec/models/song_spec.rb": [
         1,
         null,
@@ -334,10 +372,14 @@
         2,
         2,
         2,
+        2,
+        2,
         null,
         null
       ],
       "/Users/tara/turing/2mod/final/jukebox_1806_final/app/models/song.rb": [
+        1,
+        1,
         1,
         1,
         1,
@@ -387,12 +429,6 @@
         1,
         null
       ],
-      "/Users/tara/turing/2mod/final/jukebox_1806_final/app/models/playlist_song.rb": [
-        1,
-        1,
-        1,
-        null
-      ],
       "/Users/tara/turing/2mod/final/jukebox_1806_final/app/controllers/songs_controller.rb": [
         1,
         1,
@@ -439,6 +475,46 @@
         null,
         1,
         45,
+        null,
+        null
+      ],
+      "/Users/tara/turing/2mod/final/jukebox_1806_final/app/controllers/carts_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        4,
+        4,
+        4,
+        4,
+        null,
+        4,
+        4,
+        null,
+        null,
+        null
+      ],
+      "/Users/tara/turing/2mod/final/jukebox_1806_final/app/models/playlist_song.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/tara/turing/2mod/final/jukebox_1806_final/app/controllers/admin/categories_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/tara/turing/2mod/final/jukebox_1806_final/app/controllers/admin/base_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        2,
         null,
         null
       ],
@@ -536,42 +612,8 @@
         1,
         null,
         null
-      ],
-      "/Users/tara/turing/2mod/final/jukebox_1806_final/app/controllers/admin/categories_controller.rb": [
-        1,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/Users/tara/turing/2mod/final/jukebox_1806_final/app/controllers/admin/base_controller.rb": [
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        2,
-        null,
-        null
-      ],
-      "/Users/tara/turing/2mod/final/jukebox_1806_final/app/controllers/carts_controller.rb": [
-        1,
-        1,
-        null,
-        1,
-        4,
-        4,
-        4,
-        4,
-        null,
-        4,
-        4,
-        null,
-        null,
-        null
       ]
     },
-    "timestamp": 1537283472
+    "timestamp": 1537284003
   }
 }

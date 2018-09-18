@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-09-18T09:11:12-06:00">2018-09-18T09:11:12-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-09-18T09:20:03-06:00">2018-09-18T09:20:03-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.76
+         1.73
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>28</b> files in total.
-    <b>303</b> relevant lines. 
-    <span class="green"><b>303</b> lines covered</span> and
+    <b>32</b> files in total.
+    <b>326</b> relevant lines. 
+    <span class="green"><b>326</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -171,6 +171,16 @@
       </tr>
       
       <tr>
+        <td class="strong"><a href="#e1f56d3d2eed9ea959f4aec46167fac6bf8e9fe9" class="src_link" title="app/models/genre.rb">app/models/genre.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>6</td>
+        <td>4</td>
+        <td>4</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#692852d8f4fc8749e6e44e5805b67d1e2364b39a" class="src_link" title="app/models/playlist.rb">app/models/playlist.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>4</td>
@@ -193,11 +203,21 @@
       <tr>
         <td class="strong"><a href="#c80b7e95a898c3af1200956c8d46c74fc3ecbdb9" class="src_link" title="app/models/song.rb">app/models/song.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>12</td>
-        <td>8</td>
-        <td>8</td>
+        <td>14</td>
+        <td>10</td>
+        <td>10</td>
         <td>0</td>
-        <td>1.9</td>
+        <td>1.7</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#e43f98fbba55fcfae31da17e5d89f61562dad43e" class="src_link" title="app/models/song_genre.rb">app/models/song_genre.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>0</td>
+        <td>1.0</td>
       </tr>
       
       <tr>
@@ -301,7 +321,27 @@
       </tr>
       
       <tr>
+        <td class="strong"><a href="#4cba3757193516fe09be4ffef2aa11dfcf1b6521" class="src_link" title="spec/models/genre_spec.rb">spec/models/genre_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>12</td>
+        <td>7</td>
+        <td>7</td>
+        <td>0</td>
+        <td>1.4</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#669ffc668a92210a075f2245965b8d8656472a7d" class="src_link" title="spec/models/playlist_spec.rb">spec/models/playlist_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>8</td>
+        <td>5</td>
+        <td>5</td>
+        <td>0</td>
+        <td>1.4</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#529d58a5540e4feeb35d6d1abd29dc91da208509" class="src_link" title="spec/models/song_genre_spec.rb">spec/models/song_genre_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>8</td>
         <td>5</td>
@@ -313,11 +353,11 @@
       <tr>
         <td class="strong"><a href="#e20e4435a3d31b954395847df0765d49880c03e5" class="src_link" title="spec/models/song_spec.rb">spec/models/song_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>9</td>
-        <td>6</td>
-        <td>6</td>
+        <td>11</td>
+        <td>8</td>
+        <td>8</td>
         <td>0</td>
-        <td>1.5</td>
+        <td>1.6</td>
       </tr>
       
       <tr>
@@ -1684,6 +1724,61 @@
 </div>
 
       
+        <div class="source_table" id="e1f56d3d2eed9ea959f4aec46167fac6bf8e9fe9">
+  <div class="header">
+    <h3>app/models/genre.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>4</b> relevant lines. 
+      <span class="green"><b>4</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Genre &lt; ApplicationRecord</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  validates_presence_of :name</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  has_many :song_genres</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  has_many :songs, through: :song_genres</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
         <div class="source_table" id="692852d8f4fc8749e6e44e5805b67d1e2364b39a">
   <div class="header">
     <h3>app/models/playlist.rb</h3>
@@ -1775,8 +1870,8 @@
     <h3>app/models/song.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>8</b> relevant lines. 
-      <span class="green"><b>8</b> lines covered</span> and
+      <b>10</b> relevant lines. 
+      <span class="green"><b>10</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -1808,16 +1903,16 @@
           <code class="ruby">  has_many :playlists, through: :playlist_songs</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">  has_many :song_genres</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
-          <code class="ruby">  before_save :generate_slug</code>
+          <code class="ruby">  has_many :genres, through: :song_genres</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
@@ -1829,28 +1924,83 @@
         <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
+          <code class="ruby">  before_save :generate_slug</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
           <code class="ruby">  private</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="9">
+        <li class="covered" data-hits="1" data-linenumber="11">
           <span class="hits">1</span>
           
           <code class="ruby">  def generate_slug</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="10">
+        <li class="covered" data-hits="8" data-linenumber="12">
           <span class="hits">8</span>
           
           <code class="ruby">    self.slug = title.parameterize</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="never" data-hits="" data-linenumber="13">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="12">
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="e43f98fbba55fcfae31da17e5d89f61562dad43e">
+  <div class="header">
+    <h3>app/models/song_genre.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class SongGenre &lt; ApplicationRecord</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  belongs_to :song</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  belongs_to :genre</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
           
           
           <code class="ruby">end</code>
@@ -3659,6 +3809,97 @@
 </div>
 
       
+        <div class="source_table" id="4cba3757193516fe09be4ffef2aa11dfcf1b6521">
+  <div class="header">
+    <h3>spec/models/genre_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>7</b> relevant lines. 
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe Genre, type: :model do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &#39;validations&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="5">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    it { should validate_presence_of :name }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &#39;relationships&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="9">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    it { should have_many :song_genres }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="10">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    it { should have_many :songs }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
         <div class="source_table" id="669ffc668a92210a075f2245965b8d8656472a7d">
   <div class="header">
     <h3>spec/models/playlist_spec.rb</h3>
@@ -3726,13 +3967,80 @@
 </div>
 
       
+        <div class="source_table" id="529d58a5540e4feeb35d6d1abd29dc91da208509">
+  <div class="header">
+    <h3>spec/models/song_genre_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>5</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe SongGenre, type: :model do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &#39;relationships&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="5">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    it {should belong_to :song }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="6">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    it {should belong_to :genre }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
         <div class="source_table" id="e20e4435a3d31b954395847df0765d49880c03e5">
   <div class="header">
     <h3>spec/models/song_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>6</b> relevant lines. 
-      <span class="green"><b>6</b> lines covered</span> and
+      <b>8</b> relevant lines. 
+      <span class="green"><b>8</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -3782,13 +4090,25 @@
           <code class="ruby">    it {should have_many(:playlists).through(:playlist_songs)}</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="8">
+        <li class="covered" data-hits="2" data-linenumber="8">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    it { should have_many :song_genres }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="9">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    it { should have_many :genres }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="9">
+        <li class="never" data-hits="" data-linenumber="11">
           
           
           <code class="ruby">end</code>
