@@ -20,6 +20,8 @@ describe "As a visitor" do
       expect(page).to have_content(song_2.title)
       expect(page).to have_content(song_3.title)
       expect(page).to_not have_content(song_4.title)
+
+      expect(page).to have_content("Average Song Rating: #{genre.avg_song_rating}")
     end
   end
 end
