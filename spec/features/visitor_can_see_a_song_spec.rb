@@ -24,6 +24,5 @@ describe 'song show' do
     expect(page).to have_content(genre_1.name)
     expect(page).to have_content(genre_2.name)
     expect(page).to_not have_content(genre_3.name)
-    save_and_open_page
   end
 end

@@ -1,5 +1,10 @@
 <p> Songs for Genre <%= @genre.name %></p>
 
 <% @genre.songs.each do |song| %>
-  <%= song.title %>
+  <ul>
+<li> <%= song.title %> </li>
+  </ul>
 <% end %>
+
+<p> <%= @genre.average_rating %>
+
