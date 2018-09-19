@@ -54,9 +54,9 @@ describe 'award index' do
   end
   describe 'as an admin' do
     it 'admin can see all awards and a create award form' do
-      admin = User.create(username: "Dumbledore", password: "hogwarts", role: 1)
+      admin = User.create!(username: "Dumbledore", password: "hogwarts", password_confirmation: "hogwarts", role: "admin")
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(admin)
-
+      # binding.pry
       expect(page).to have_link(award_1.name)
       expect(page).to have_link(award_2.name)
       expect(page).to have_content("Create a new award:")
