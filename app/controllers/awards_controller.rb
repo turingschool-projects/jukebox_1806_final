@@ -1,4 +1,5 @@
 class AwardsController < ApplicationController
   def index
-  end 
+    @awards = Award.all
+  end
 end
