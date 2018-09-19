@@ -1,12 +1,15 @@
 require 'rails_helper'
 
-describe 'visitor visits a genre index page' do
-  xit 'shows information about genre' do
-    genre_1 = Genre.create(name: 'Funk')
-    genre_2 = Genre.create(name: 'Rap')
-    song_1 = genre_1.songs.create(title: 'Superfreak', length: 300, play_count: 5000000, rating: 3)
-    song_2 = genre_1.songs.create(title: 'Brick House', length: 300, play_count: 5000000, rating: 3)
-    song_3 = genre_2.songs.create(title: 'Ice Ice Baby', length: 300, play_count: 5000000, rating: 3)
+describe 'visitor visits a genre show page' do
+  it 'shows information about genre' do
+    artist_1 = Artist.create(name: 'Nicky Fresh')
+    genre_1 = Genre.create!(name: 'Funk')
+    genre_2 = Genre.create!(name: 'Rap')
+    song_1 = artist_1.songs.create!(title: 'Superfreak', length: 300, play_count: 5000000, rating: 3)
+    song_2 = artist_1.songs.create!(title: 'Brick House', length: 300, play_count: 5000000, rating: 3)
+    song_3 = artist_1.songs.create!(title: 'Ice Ice Baby', length: 300, play_count: 5000000, rating: 3)
+
+    genre_1.songs << [song_1, song_2]
 
     visit genre_path(genre_1)
 

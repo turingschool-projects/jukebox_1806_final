@@ -16,7 +16,7 @@ describe 'admin visits a genre index page' do
     fill_in :genre_name, with: "Trip"
 
     click_on 'Create Genre'
-save_and_open_page
+
     expect(page).to have_content('Trip')
   end
 end
