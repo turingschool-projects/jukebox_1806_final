@@ -8,4 +8,7 @@ describe Song, type: :model do
     it {should have_many(:song_genres)}
     it {should have_many(:genres).through(:song_genres)}
   end
+
+
+    
 end
