@@ -1,7 +1,44 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/id/src/turing/mod2/jukebox_1806/spec/features/user_can_add_songs_to_a_cart_spec.rb": [
+      "/Users/andrewtobin/mod2_retake/jukebox_1806_final/spec/features/awards/admin_sees_index_page_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/andrewtobin/mod2_retake/jukebox_1806_final/spec/features/awards/user_sees_index_page_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/andrewtobin/mod2_retake/jukebox_1806_final/spec/features/user_can_add_songs_to_a_cart_spec.rb": [
         1,
         null,
         1,
@@ -45,7 +82,7 @@
         null,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/spec/features/user_can_create_an_artist_spec.rb": [
+      "/Users/andrewtobin/mod2_retake/jukebox_1806_final/spec/features/user_can_create_an_artist_spec.rb": [
         1,
         null,
         1,
@@ -71,7 +108,7 @@
         null,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/spec/features/user_can_create_playlist_spec.rb": [
+      "/Users/andrewtobin/mod2_retake/jukebox_1806_final/spec/features/user_can_create_playlist_spec.rb": [
         1,
         null,
         1,
@@ -87,7 +124,7 @@
         null,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/spec/features/user_can_lookup_songs_by_slug_spec.rb": [
+      "/Users/andrewtobin/mod2_retake/jukebox_1806_final/spec/features/user_can_lookup_songs_by_slug_spec.rb": [
         1,
         null,
         1,
@@ -106,7 +143,7 @@
         null,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/spec/features/user_can_register_and_login_spec.rb": [
+      "/Users/andrewtobin/mod2_retake/jukebox_1806_final/spec/features/user_can_register_and_login_spec.rb": [
         1,
         null,
         1,
@@ -200,7 +237,7 @@
         null,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/spec/features/user_creates_new_song_spec.rb": [
+      "/Users/andrewtobin/mod2_retake/jukebox_1806_final/spec/features/user_creates_new_song_spec.rb": [
         1,
         null,
         1,
@@ -223,7 +260,7 @@
         null,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/spec/features/user_sees_all_songs_spec.rb": [
+      "/Users/andrewtobin/mod2_retake/jukebox_1806_final/spec/features/user_sees_all_songs_spec.rb": [
         1,
         null,
         1,
@@ -242,7 +279,7 @@
         null,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/spec/models/artist_spec.rb": [
+      "/Users/andrewtobin/mod2_retake/jukebox_1806_final/spec/models/artist_spec.rb": [
         1,
         null,
         1,
@@ -255,19 +292,30 @@
         null,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/app/models/artist.rb": [
+      "/Users/andrewtobin/mod2_retake/jukebox_1806_final/app/models/artist.rb": [
         1,
         1,
         null,
         1,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/app/models/application_record.rb": [
+      "/Users/andrewtobin/mod2_retake/jukebox_1806_final/app/models/application_record.rb": [
         1,
         1,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/spec/models/cart_spec.rb": [
+      "/Users/andrewtobin/mod2_retake/jukebox_1806_final/spec/models/award_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/andrewtobin/mod2_retake/jukebox_1806_final/app/models/award.rb": [
+        1,
+        null
+      ],
+      "/Users/andrewtobin/mod2_retake/jukebox_1806_final/spec/models/cart_spec.rb": [
         1,
         null,
         1,
@@ -291,17 +339,17 @@
         null,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/app/models/cart.rb": [
+      "/Users/andrewtobin/mod2_retake/jukebox_1806_final/app/models/cart.rb": [
         1,
         null,
         1,
         null,
         1,
-        47,
+        49,
         null,
         null,
         1,
-        35,
+        37,
         null,
         null,
         1,
@@ -310,7 +358,7 @@
         null,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/spec/models/playlist_spec.rb": [
+      "/Users/andrewtobin/mod2_retake/jukebox_1806_final/spec/models/playlist_spec.rb": [
         1,
         null,
         1,
@@ -320,13 +368,13 @@
         null,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/app/models/playlist.rb": [
+      "/Users/andrewtobin/mod2_retake/jukebox_1806_final/app/models/playlist.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/spec/models/song_spec.rb": [
+      "/Users/andrewtobin/mod2_retake/jukebox_1806_final/spec/models/song_spec.rb": [
         1,
         null,
         1,
@@ -337,7 +385,7 @@
         null,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/app/models/song.rb": [
+      "/Users/andrewtobin/mod2_retake/jukebox_1806_final/app/models/song.rb": [
         1,
         1,
         1,
@@ -351,7 +399,7 @@
         null,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/spec/models/user_spec.rb": [
+      "/Users/andrewtobin/mod2_retake/jukebox_1806_final/spec/models/user_spec.rb": [
         1,
         null,
         1,
@@ -377,7 +425,7 @@
         null,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/app/models/user.rb": [
+      "/Users/andrewtobin/mod2_retake/jukebox_1806_final/app/models/user.rb": [
         1,
         1,
         1,
@@ -387,13 +435,38 @@
         1,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/app/models/playlist_song.rb": [
+      "/Users/andrewtobin/mod2_retake/jukebox_1806_final/app/controllers/application_controller.rb": [
         1,
         1,
+        null,
         1,
+        null,
+        1,
+        null,
+        1,
+        37,
+        null,
+        null,
+        1,
+        4,
+        null,
+        null,
+        1,
+        47,
+        null,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/app/controllers/songs_controller.rb": [
+      "/Users/andrewtobin/mod2_retake/jukebox_1806_final/app/controllers/awards_controller.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        null,
+        null,
+        null
+      ],
+      "/Users/andrewtobin/mod2_retake/jukebox_1806_final/app/controllers/songs_controller.rb": [
         1,
         1,
         13,
@@ -421,50 +494,7 @@
         null,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/app/controllers/application_controller.rb": [
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
-        1,
-        35,
-        null,
-        null,
-        1,
-        2,
-        null,
-        null,
-        1,
-        45,
-        null,
-        null
-      ],
-      "/Users/id/src/turing/mod2/jukebox_1806/app/controllers/playlists_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/id/src/turing/mod2/jukebox_1806/app/controllers/sessions_controller.rb": [
+      "/Users/andrewtobin/mod2_retake/jukebox_1806_final/app/controllers/sessions_controller.rb": [
         1,
         1,
         null,
@@ -485,7 +515,7 @@
         null,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/app/controllers/users_controller.rb": [
+      "/Users/andrewtobin/mod2_retake/jukebox_1806_final/app/controllers/users_controller.rb": [
         1,
         1,
         2,
@@ -511,30 +541,68 @@
         null,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/app/controllers/carts_controller.rb": [
+      "/Users/andrewtobin/mod2_retake/jukebox_1806_final/app/controllers/playlists_controller.rb": [
+        1,
         1,
         1,
         null,
-        1,
-        4,
-        4,
-        4,
-        4,
         null,
-        4,
-        4,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/andrewtobin/mod2_retake/jukebox_1806_final/app/controllers/artists_controller.rb": [
+        1,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        2,
+        2,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        2,
+        null,
+        null
+      ],
+      "/Users/andrewtobin/mod2_retake/jukebox_1806_final/app/models/playlist_song.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/andrewtobin/mod2_retake/jukebox_1806_final/app/controllers/admin/categories_controller.rb": [
+        1,
+        1,
         null,
         null,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/app/controllers/admin/categories_controller.rb": [
-        1,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/Users/id/src/turing/mod2/jukebox_1806/app/controllers/admin/base_controller.rb": [
+      "/Users/andrewtobin/mod2_retake/jukebox_1806_final/app/controllers/admin/base_controller.rb": [
         1,
         1,
         null,
@@ -545,33 +613,23 @@
         null,
         null
       ],
-      "/Users/id/src/turing/mod2/jukebox_1806/app/controllers/artists_controller.rb": [
-        1,
-        null,
-        1,
-        2,
-        null,
-        null,
-        1,
-        2,
-        2,
-        1,
-        null,
-        1,
-        null,
-        null,
-        null,
+      "/Users/andrewtobin/mod2_retake/jukebox_1806_final/app/controllers/carts_controller.rb": [
         1,
         1,
         null,
+        1,
+        4,
+        4,
+        4,
+        4,
         null,
-        1,
-        1,
-        2,
+        4,
+        4,
+        null,
         null,
         null
       ]
     },
-    "timestamp": 1537206775
+    "timestamp": 1537371189
   }
 }
