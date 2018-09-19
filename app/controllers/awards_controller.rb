@@ -1,9 +1,14 @@
 class AwardsController < ApplicationController
   before_action :require_admin, only: [:create]
+  before_action :set_award, only: [:show]
 
   def index
     @awards = Award.all
     @award = Award.new
+  end
+
+  def show
+
   end
 
   def create
@@ -19,5 +24,9 @@ class AwardsController < ApplicationController
 
     def require_admin
       render file: "/public/404" unless current_admin?
+    end
+
+    def set_award
+      @award = Award.find(params[:id])
     end
 end
