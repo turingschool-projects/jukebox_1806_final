@@ -30,9 +30,9 @@ describe 'award show' do
 
       expect(page).to have_content(award_1.name)
       expect(page).to_not have_content(award_2.name)
-      # expect(page).to have_content(song_1.title)
-      # expect(page).to have_content(song_2.title)
-      # expect(page).to_not have_content(song_3.title)
+      expect(page).to have_content(song_1.title)
+      expect(page).to have_content(song_2.title)
+      expect(page).to_not have_content(song_3.title)
     end
   end
 end
