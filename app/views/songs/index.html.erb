@@ -4,6 +4,10 @@
   <ul>
     <li>Title: <%= song.title %></li>
     <li>Play Count: <%= song.play_count %></li>
+    <% song.awards.each do |award| %>
+      <%= award.name %>
+      <%= award.year %>
+    <% end %>
   </ul>
   <%= button_to "Add Song", carts_path(song_id: song.id), class: "btn btn-danger" %>
 <% end %>
