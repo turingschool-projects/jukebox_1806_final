@@ -24,12 +24,11 @@ describe 'award index' do
   award_1 = Award.create!(name: "golden globe", year: 2002)
   award_2 = Award.create!(name: "golden globe", year: 2002)
 
-  before do
-    visit awards_path
-  end
+
 
   describe 'as a visitor' do
     it 'visitor can see all awards' do
+      visit awards_path
 
       expect(page).to have_link(award_1.name)
       expect(page).to have_link(award_2.name)
@@ -44,6 +43,8 @@ describe 'award index' do
       user = User.create(username: "Elfo", password: "enchanted", role: 0)
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
 
+      visit awards_path
+
       expect(page).to have_link(award_1.name)
       expect(page).to have_link(award_2.name)
       expect(page).to_not have_content("Create a new award:")
@@ -54,9 +55,12 @@ describe 'award index' do
   end
   describe 'as an admin' do
     it 'admin can see all awards and a create award form' do
-      admin = User.create!(username: "Dumbledore", password: "hogwarts", password_confirmation: "hogwarts", role: "admin")
+      admin = User.create!(username: "Dumbledore", password: "hogwarts", password_confirmation: "hogwarts", role: 1)
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(admin)
-      # binding.pry
+
+
+      visit awards_path
+
       expect(page).to have_link(award_1.name)
       expect(page).to have_link(award_2.name)
       expect(page).to have_content("Create a new award:")
