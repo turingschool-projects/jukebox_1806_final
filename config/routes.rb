@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   root 'songs#index'
   resources :songs, only: [:index]
+  resources :genres, only: [:index, :create, :show]
 
   resources :artists, only: [:new, :create, :index], shallow: true do
     resources :songs, only: [:show, :new, :create], param: :slug
@@ -13,6 +14,7 @@ Rails.application.routes.draw do
 
   namespace :admin do
     resources :categories, only: :index
+    resources :genres, only: [:new, :create]
   end
 
   resources :carts, only: [:create]
