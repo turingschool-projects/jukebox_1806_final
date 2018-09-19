@@ -10,5 +10,6 @@ describe 'visitor visits a song show page' do
     expect(page).to have_content(song_1.title)
     expect(page).to have_content(song_1.length)
     expect(page).to have_content(song_1.play_count)
+    
   end
 end

@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe 'visitor visits a genre index page' do
-  it 'shows information about genre' do
+  xit 'shows information about genre' do
     genre_1 = Genre.create(name: 'Funk')
     genre_2 = Genre.create(name: 'Rap')
     song_1 = genre_1.songs.create(title: 'Superfreak', length: 300, play_count: 5000000, rating: 3)

@@ -51,7 +51,6 @@ ActiveRecord::Schema.define(version: 20180918152812) do
     t.datetime "updated_at", null: false
     t.bigint "artist_id"
     t.string "slug"
-    t.string "rating"
     t.index ["artist_id"], name: "index_songs_on_artist_id"
   end
 
