@@ -1,5 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe Award, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+describe Award, type: :model do
+  describe 'relationships' do
+    it {should have_many :song_awards}
+    it {should have_many(:songs).through(:song_awards)}
+  end
 end
