@@ -1,3 +1,14 @@
+# User Story #5
+# As a Visitor,
+#   When I visit the song index,
+#     Under each song title listed,
+#     I also see a heading that says "Awards for this Song:"
+#     I also see each award the song have won
+#     I also see what year the award was won
+#
+# Testing requirements:
+# - users should see at least 2 songs on the page
+# - each song should have at least 2 awards
 require 'rails_helper'
 
 describe 'song index' do

@@ -10,6 +10,10 @@
 # - users should see at least 2 awards listed on the page, plus the new one created
 # Visitor (unregistered user, not logged in)
 
+# ## User Story #4
+# As a Visitor,
+#   When I visit the awards index,
+#     I cannot see the form to create new awards.
 require 'rails_helper'
 
 describe 'award index' do
