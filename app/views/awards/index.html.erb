@@ -1,0 +1,13 @@
+<% @awards.each do |award| %>
+  <%= link_to award.name, award_path(award) %>
+<% end %>
+<% if current_admin? %>
+  <h1>Create a new award:</h1>
+    <%= form_for @award do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+      <%= f.label :year %>
+      <%= f.number_field :year %>
+      <%= f.submit %>
+    <% end %>
+<% end %>
