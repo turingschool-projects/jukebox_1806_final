@@ -18,6 +18,8 @@
 # Testing requirements:
 # - users should see at least 2 awards listed on the page, plus the form
 
+
+
 require 'rails_helper'
 
 describe 'award index' do
@@ -57,7 +59,6 @@ describe 'award index' do
     it 'admin can see all awards and a create award form' do
       admin = User.create!(username: "Dumbledore", password: "hogwarts", password_confirmation: "hogwarts", role: 1)
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(admin)
-
 
       visit awards_path
 

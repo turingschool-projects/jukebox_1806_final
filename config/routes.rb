@@ -22,5 +22,5 @@ Rails.application.routes.draw do
   get '/logout', to: 'sessions#destroy'
   delete '/logout', to: 'sessions#destroy'
 
-  resources :awards, only: [:index, :show]
+  resources :awards, only: [:index, :show, :create]
 end
