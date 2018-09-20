@@ -5,3 +5,13 @@
     <li>Name of Award: <%= link_to a.name, award_path(a) %></li>
   </ul>
 <% end %>
+
+<% if current_admin? %>
+  <h5>Create a New Award</h5>
+  <% form_for [:admin, @award] do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <%= f.submit %>
+  <% end %>
+<% end %>
