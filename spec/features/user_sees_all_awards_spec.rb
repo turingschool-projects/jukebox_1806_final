@@ -18,5 +18,15 @@ describe 'user sees all awards' do
       expect(current_path).to eq(award_path(award_1))
 
     end
+
+    it 'does not display create award form' do
+      visitor = User.create(username: "Becca", password: "password")
+
+      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(visitor)
+
+      visit awards_path
+
+      expect(page).to_not have_content("Create a New Award")
+    end
   end
 end
