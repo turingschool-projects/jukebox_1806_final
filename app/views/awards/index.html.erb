@@ -1,0 +1,7 @@
+<h1>All Awards</h1>
+
+<% @awards.each do |a| %>
+  <ul>
+    <li>Name of Award: <%= link_to a.name, award_path(a) %></li>
+  </ul>
+<% end %>

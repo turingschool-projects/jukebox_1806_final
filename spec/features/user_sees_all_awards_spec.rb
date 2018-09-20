@@ -9,9 +9,13 @@ describe 'user sees all awards' do
 
       visit awards_path
 
-      expect(page).to have_content(award_1.name)
-      expect(page).to have_content(award_2.name)
-      expect(page).to have_content(award_3.name)
+      expect(page).to have_link(award_1.name)
+      expect(page).to have_link(award_2.name)
+      expect(page).to have_link(award_3.name)
+
+      click_on("#{award_1.name}")
+
+      expect(current_path).to eq(award_path(award_1))
 
     end
   end
