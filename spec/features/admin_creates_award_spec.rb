@@ -12,6 +12,10 @@ describe 'admin creates an award' do
   end
 
   it 'displays created award in index' do
+    award_1 = Award.create!(name: "Award 1")
+    award_2 = Award.create!(name: "Award 2")
+    award_3 = Award.create!(name: "Award 2")
+
     admin = User.create(username: "Becca", password: "password", role: 1)
 
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(admin)
@@ -24,5 +28,8 @@ describe 'admin creates an award' do
 
     expect(current_path).to eq(awards_path)
     expect(page).to have_content(Award.last.name)
+    expect(page).to have_link(award_1.name)
+    expect(page).to have_link(award_2.name)
+    expect(page).to have_link(award_3.name)
   end
 end
