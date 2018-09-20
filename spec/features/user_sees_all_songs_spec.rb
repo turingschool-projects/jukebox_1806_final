@@ -28,8 +28,9 @@ describe 'song index' do
     song_award4 = SongAward.create!(song_id: song_2.id, award_id: award_2.id, year: 2018)
 
     visit song_path(song_1.slug)
+    save_and_open_page
 
-    expect(page).to have_content("Award 1")
-    expect(page).to have_content("Award 2")
+    expect(page).to have_content("Award 1 2018")
+    expect(page).to have_content("Award 2 2018")
   end
 end
