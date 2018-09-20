@@ -1,0 +1,8 @@
+<h1><%= @award.name %></h1>
+
+<li>Songs for this Award:
+<% @award.song_awards.each do |sa| %>
+  <%= sa.song.title %>
+  <%= sa.year %>
+  <% end %>
+</li>

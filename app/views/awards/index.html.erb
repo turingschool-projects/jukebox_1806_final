@@ -1,0 +1,12 @@
+<h1>All Awards</h1>
+
+<% @awards.each do |a| %>
+  <ul>
+    <li>Name of Award: <%= link_to a.name, award_path(a) %></li>
+  </ul>
+<% end %>
+
+<% if current_admin? %>
+  <h5>Create a New Award</h5>
+  <%= render partial: "form" %>
+<% end %>
